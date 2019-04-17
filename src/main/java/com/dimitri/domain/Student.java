@@ -1,9 +1,14 @@
 package com.dimitri.domain;
 
+import java.util.Set;
+
 public class Student {
     private String studentId;
     private String studentName;
     private String studentSurname;
+    private String studentPhoneNr;
+    private String studentEmail;
+
 
     private Student(){}
 
@@ -11,6 +16,8 @@ public class Student {
         this.studentId = builder.studentId;
         this.studentName = builder.studentName;
         this.studentSurname = builder.studentSurname;
+        this.studentPhoneNr = builder.studentPhoneNr;
+        this.studentEmail = builder.studentEmail;
     }
 
     public String getStudentId() {
@@ -39,6 +46,8 @@ public class Student {
         private String studentId;
         private String studentName;
         private String studentSurname;
+        private String studentPhoneNr;
+        private String studentEmail;
 
         public Builder studentId(String studentId){
             this.studentId = studentId;
@@ -51,8 +60,16 @@ public class Student {
 
         }
 
-        public Builder StudentSurname(String studentSurname){
+        public Builder studentSurname(String studentSurname){
             this.studentSurname = studentSurname;
+            return this;
+        }
+        public Builder studentPhoneNr(String studentPhoneNr){
+            this.studentPhoneNr = studentPhoneNr;
+            return this;
+        }
+        public Builder studentEmail(String studentEmail){
+            this.studentEmail = studentEmail;
             return this;
         }
 

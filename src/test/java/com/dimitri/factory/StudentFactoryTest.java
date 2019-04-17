@@ -11,7 +11,7 @@ public class StudentFactoryTest {
     @Test
     public void getStudent() {
         String surname = "Dimitri";
-        Student d = StudentFactory.getStudent("111","Dimitri","Ferus");
+        Student d = StudentFactory.getStudent("Dimitri","Ferus","021773000", "df@gmail.com");
         Assert.assertEquals(surname, d.getStudentName());
         Assert.assertNotNull(d);
     }
