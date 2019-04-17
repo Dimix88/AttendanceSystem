@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f244758d-b429-4ebc-852a-b26554d4030f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/UML Diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Name.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/AddressFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/ClassesFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/EnrollFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/NameFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/ClassesFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/EnrollFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UML Diagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/StudentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/StudentFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/StudentFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/StudentFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Student$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Student$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/StudentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/StudentFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/factory/StudentFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/factory/StudentFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/School.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="323">
               <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="e#197#198#0" expanded="true" />
@@ -86,11 +71,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/README.md">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="204">
-                <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="170">
+                <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               </first_editor>
               <second_editor />
             </state>
@@ -152,6 +137,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/factory/AddressFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/School.java" />
         <option value="$PROJECT_DIR$/.idea/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -184,55 +170,6 @@
               <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -243,7 +180,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555532446689" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555533718115" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Attendance-Monitoring-System-using-Face-Recognition-Technique-master" />
@@ -259,6 +196,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Carl Ferus\IdeaProjects\AttendanceSystem" />
       <recent name="C:\Users\Carl Ferus\IdeaProjects\AttendanceSystem\.idea" />
     </key>
   </component>
@@ -383,7 +321,7 @@
       <workItem from="1555329229046" duration="1003000" />
       <workItem from="1555516050294" duration="4286000" />
       <workItem from="1555525602038" duration="757000" />
-      <workItem from="1555530036331" duration="2216000" />
+      <workItem from="1555530036331" duration="3434000" />
     </task>
     <servers />
   </component>
@@ -420,12 +358,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26726000" />
+    <option name="totallyTimeSpent" value="27944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27987897" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27987897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -442,7 +381,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -643,21 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/School.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -691,6 +615,31 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="204">
             <caret line="12" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/School.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="170">
+            <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           </first_editor>
           <second_editor />
         </state>
