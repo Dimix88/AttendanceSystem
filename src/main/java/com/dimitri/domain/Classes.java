@@ -1,11 +1,26 @@
 package com.dimitri.domain;
 
-public class Classes {
+import java.util.Objects;
+
+public class Classes implements Comparable<Classes> {
 
     private String classCode;
     private String courseCode;
     private String lecturerId;
     private String classTime;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Classes classes = (Classes) o;
+        return classCode.equals(classes.classCode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(classCode);
+    }
 
     public Classes(){}
 
@@ -33,6 +48,12 @@ public class Classes {
     public String getClassTime() {
         return classTime;
     }
+
+    @Override
+    public int compareTo(Classes o) {
+        return this.classCode.compareTo(o.classCode);
+    }
+
     public static class Builder{
         String classCode;
         String courseCode;
@@ -55,9 +76,27 @@ public class Classes {
             this.classTime = classTime;
             return this;
         }
+        public Builder copy(Classes classes){
+            this.classCode = classes.classCode;
+            this.courseCode = classes.courseCode;
+            this.lecturerId = classes.lecturerId;
+            this.classTime = classes.classTime;
+
+            return this;
+        }
         public Classes build(){
             return new Classes(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Classes{" +
+                "classCode='" + classCode + '\'' +
+                ", courseCode='" + courseCode + '\'' +
+                ", lecturerId='" + lecturerId + '\'' +
+                ", classTime='" + classTime + '\'' +
+                '}';
     }
 }

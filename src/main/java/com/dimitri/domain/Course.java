@@ -1,6 +1,8 @@
 package com.dimitri.domain;
 
-public class Course {
+import java.util.Objects;
+
+public class Course implements Comparable<Course> {
 
  private String courseId;
  private String courseName;
@@ -35,10 +37,35 @@ public class Course {
             this.courseName = courseName;
             return this;
         }
+        public Builder copy(Course course){
+            this.courseId = course.courseId;
+            this.courseName = course.courseName;
+
+
+            return this;
+        }
 
         public Course build(){
             return new Course(this);
         }
 
+    }
+
+    @Override
+    public int compareTo(Course o) {
+        return this.courseId.compareTo(o.courseId);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Course course = (Course) o;
+        return courseId.equals(course.courseId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(courseId);
     }
 }

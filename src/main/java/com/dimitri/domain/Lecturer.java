@@ -1,6 +1,8 @@
 package com.dimitri.domain;
 
-public class Lecturer {
+import java.util.Objects;
+
+public class Lecturer implements Comparable<Lecturer> {
 
     private String lecId;
     private String firstName;
@@ -40,6 +42,24 @@ public class Lecturer {
         return email;
     }
 
+    @Override
+    public int compareTo(Lecturer o) {
+        return this.lecId.compareTo(o.lecId);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Lecturer lecturer = (Lecturer) o;
+        return lecId.equals(lecturer.lecId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(lecId);
+    }
+
     public static class Builder {
 
         private String lecId;
@@ -69,6 +89,14 @@ public class Lecturer {
         }
         public Builder email(String email){
             this.email = email;
+            return this;
+        }
+        public Builder copy(Lecturer lecturer){
+            this.lecId = lecturer.lecId;
+            this.firstName = lecturer.firstName;
+            this.surname = lecturer.surname;
+            this.phoneNumber = lecturer.phoneNumber;
+            this.email = lecturer.email;
             return this;
         }
 

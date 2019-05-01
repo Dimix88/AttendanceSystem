@@ -1,6 +1,10 @@
 package com.dimitri.domain;
 
-public class Enroll {
+import com.dimitri.Repository.EnrollRepository;
+
+import java.util.Objects;
+
+public class Enroll implements Comparable<Enroll> {
     private String courseCode;
     private String studentId;
     private String enrollDate;
@@ -54,10 +58,35 @@ public class Enroll {
             this.enrollGrade = enrollGrade;
             return this;
         }
+        public Builder copy(Enroll enroll){
+            this.courseCode = enroll.courseCode;
+            this.studentId = enroll.studentId;
+            this.enrollDate = enroll.enrollDate;
+            this.enrollGrade = enroll.enrollGrade;
 
+            return this;
+        }
         public Enroll build(){
             return new Enroll(this);
         }
 
+    }
+
+    @Override
+    public int compareTo(Enroll o) {
+        return this.studentId.compareTo(o.studentId);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Enroll enroll = (Enroll) o;
+        return studentId.equals(enroll.studentId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(studentId);
     }
 }
