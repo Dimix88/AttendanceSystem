@@ -33,17 +33,19 @@ public class DepartmentRepositoryImpl implements DepartmentRepository {
 
     @Override
     public Department update(Department department) {
-        Department toDelete = findDepartment(department.getDeptCode());
-        if(toDelete != null) {
-            this.departments.remove(toDelete);
-            return create(department);
+        if(this.departments.contains(department)){
+            this.departments.remove(department);
+            this.departments.add(department);
         }
-        return null;
+        return department;
     }
 
     @Override
     public void delete(String deptCode) {
-        this.departments.removeIf(department -> department.getDeptCode()==deptCode);
+        Department department1 = findDepartment(deptCode);
+        if(department1 != null){
+            this.departments.remove(department1);
+        }
     }
 
     @Override
