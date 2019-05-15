@@ -1,0 +1,74 @@
+package com.dimitri.service.impl;
+
+import com.dimitri.Repository.SubjectsRepository;
+import com.dimitri.Repository.impl.SubjectsRepositoryImpl;
+import com.dimitri.domain.Subjects;
+import com.dimitri.factory.SubjectsFactory;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import static org.junit.Assert.*;
+
+public class SubjectsServiceImplTest {
+    private SubjectsRepository repository;
+    private Subjects c1;
+    Set<Subjects> subjects = new HashSet<>();
+
+    @Before
+    public void setUp() throws Exception {
+        this.repository = SubjectsRepositoryImpl.getRepository();
+        c1 = SubjectsFactory.getSubjects("2019","Marketing");
+
+    }
+
+    @Test
+    public void create() {
+        Subjects subjects= this.repository.create(this.c1);
+        String name = "Marketing";
+        System.out.println("In create, created = " + subjects);
+        Assert.assertEquals(name,subjects.getSubName());
+        Assert.assertNotNull(subjects);
+        Assert.assertSame(subjects, this.c1);
+    }
+
+    @Test
+    public void update() {
+        Subjects subjects= this.repository.create(this.c1);
+        String newSubjectCode = "133";
+        Subjects newSubject = new Subjects.Builder().copy(subjects).subjectCode(newSubjectCode).build();
+        this.repository.create(newSubject);
+        System.out.println("In update, Will update = " + newSubject);
+        Subjects updated = this.repository.update(newSubject);
+        System.out.println("In update, updated = " + updated);
+        Assert.assertSame(newSubject.getSubjectCode(), updated.getSubjectCode());
+    }
+
+    @Test
+    public void delete() {
+        Subjects subjects= this.repository.create(this.c1);
+        this.repository.delete(subjects.getSubjectCode());
+        System.out.println(this.subjects);
+    }
+
+    @Test
+    public void read() {
+        Subjects subjects= this.repository.create(this.c1);
+        System.out.println("In read, courseId = "+ subjects.getSubjectCode());
+        Subjects read = this.repository.read(subjects.getSubjectCode());
+        System.out.println("In read, read = "+ read);
+        Assert.assertEquals(c1.getSubjectCode(), this.repository.read(c1.getSubjectCode()).getSubjectCode());
+
+    }
+
+
+    @Test
+    public void getAll() {
+        Set<Subjects> subjectsSet = this.repository.getAll();
+        System.out.println("In getAll, all = " + subjectsSet);
+        Assert.assertSame(1, subjectsSet.size());
+    }
+}

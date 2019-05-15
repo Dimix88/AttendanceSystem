@@ -44,7 +44,10 @@ public class EnrollRepositoryImpl implements EnrollRepository {
 
     @Override
     public void delete(String studentId) {
-        this.enrolls.removeIf(enroll -> enroll.getStudentId()==studentId);
+        Enroll enroll = findStudent(studentId);
+        if(enroll != null){
+            this.enrolls.remove(enroll);
+        }
     }
 
     @Override

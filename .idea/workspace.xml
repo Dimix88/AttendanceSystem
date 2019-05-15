@@ -1,9 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/BuildingServiceImplTest.java" description="public void delete() {" line="51" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f244758d-b429-4ebc-852a-b26554d4030f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/AdminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/CleanerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/GradeReportRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/ImportantdatesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/NameRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/NoticesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/SecurityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/SubjectsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/TimetableRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/AddressRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/AdminRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/CleanerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/GradeReportRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/ImportantDatesRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/NameRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/NoticesRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SecurityRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SubjectsRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/TimetableRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/BuildingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Cleaner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/GradeReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/ImportantDates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Notices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Security.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Subjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Timetable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/AdminFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/CleanerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/GradeReportFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/ImportantDatesFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/NoticesFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/SecurityFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/SubjectsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/TimetableFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/ClassesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/CleanerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/EnrollService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/GradeReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/ImportantdatesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/LecturerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/NameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/NoticesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/SchoolService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/SemesterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/SubjectsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/TimetableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ClassesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/CleanerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/EnrollServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/GradeReportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ImportantDatesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/LecturerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NameServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NoticesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/RoomServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SchoolServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SemesterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SubjectsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/TimeTableServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/util/AttendanceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/AddressRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/AdminRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/CleanerRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/GradeReportRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/ImportantDatesRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/NameRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/NoticesRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SecurityRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SubjectsRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/TimetableRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/AddressFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/AdminFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/BuildingFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/CleanerFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/DepartmentFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/GradeReportFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/ImportantDatesFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/NameFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/NoticesFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/RoomFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/SecurityFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/SemesterFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/SubjectsFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/factory/TimetableFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/AddressServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/AdminServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/BuildingServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/ClassesServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/CleanerServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/CourseServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/DepartmentServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/EnrollServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/GradeReportServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/ImportantDatesServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/LecturerServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/NameServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/NoticesServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/RoomServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/SchoolServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/SecurityServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/SemesterServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/StudentServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/SubjectsServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/TimeTableServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/BuildingRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/BuildingRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/ClassesRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/ClassesRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/CourseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/CourseRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/DepartmentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/EnrollRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/EnrollRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/LecturerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/LecturerRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/RoomRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/RoomRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SchoolRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SchoolRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SemesterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SemesterRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/StudentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/SemesterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/factory/SemesterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/BuildingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/BuildingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/BuildingRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/BuildingRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/ClassesRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/ClassesRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/CourseRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/CourseRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/DepartmentRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/DepartmentRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/EnrollRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/EnrollRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/LecturerRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/LecturerRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/RoomRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/RoomRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SchoolRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SchoolRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SemesterRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SemesterRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/StudentRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/StudentRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/Repository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/BuildingRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/BuildingRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/ClassesRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/ClassesRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/CourseRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/CourseRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/DepartmentRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/DepartmentRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/EnrollRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/EnrollRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/LecturerRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/LecturerRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/RoomRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/RoomRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/SchoolRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/SchoolRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/SemesterRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/SemesterRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/StudentRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/Repository/impl/StudentRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Address$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Address$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Building$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Building$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Building.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Building.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Classes$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Classes$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Classes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Classes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Course$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Course$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Department$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Department$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Enroll$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Enroll$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Enroll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Enroll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Lecturer$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Lecturer$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Lecturer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Lecturer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Name$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Name$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Name.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Room$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Room$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/School$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/School$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/School.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/School.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Semester$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Semester$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Semester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Semester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Student$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Student$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/domain/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/AddressFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/AddressFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/BuildingFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/BuildingFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/ClassesFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/ClassesFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/CourseFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/CourseFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/DepartmentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/DepartmentFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/EnrollFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/EnrollFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/LecturerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/LecturerFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/NameFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/NameFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/RoomFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/RoomFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/SchoolFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/SchoolFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/SemesterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/SemesterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/factory/StudentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/factory/StudentFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/IService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/BuildingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/BuildingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/BuildingRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/BuildingRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/ClassesRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/ClassesRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/CourseRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/CourseRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/DepartmentRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/DepartmentRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/EnrollRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/EnrollRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/LecturerRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/LecturerRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/RoomRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/RoomRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/SchoolRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/SchoolRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/SemesterRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/SemesterRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/StudentRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/Repository/impl/StudentRepositoryImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,56 +224,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/StudentRepositoryImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="78" column="46" selection-start-line="76" selection-start-column="8" selection-end-line="78" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/ClassesRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/StudentRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/DepartmentRepositoryImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/TimeTableServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/DepartmentRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -86,57 +250,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/factory/BuildingFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/factory/RoomFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/factory/SchoolFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/SchoolFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/Repository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/BuildingRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/StudentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/BuildingRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/ClassesRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/CourseRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/DepartmentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/EnrollRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/LecturerRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/RoomRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/SchoolRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/SemesterRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/IService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/BuildingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/BuildingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/EnrollRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/LecturerRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/RoomRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SchoolRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SemesterRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/ClassesFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/factory/ClassesFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Classes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Building.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Department.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Enroll.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Lecturer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Room.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/School.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Semester.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/DepartmentRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/EnrollRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/LecturerRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/RoomRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SchoolRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SemesterRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/ClassesRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/ClassesRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/Cleaner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/CleanerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/SecurityRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/GradeReportService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/SecurityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/CleanerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/AdminRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/CleanerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/CleanerRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/ImportantDatesRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/NoticesRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/TimetableRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SubjectsRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SecurityRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/CleanerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ImportantDatesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/GradeReportServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/NoticesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NoticesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SecurityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SubjectsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/TimeTableServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/AdminRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/CleanerRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/StudentRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/BuildingRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/StudentRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/BuildingRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/CourseRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/CourseRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/DepartmentRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/GradeReportRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/domain/GradeReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/factory/GradeReportFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/GradeReportRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/ImportantDatesRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/NoticesRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SecurityRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/TimetableRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SubjectsRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/AdminServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/CleanerServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/GradeReportServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/ImportantDatesServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/NoticesServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/SecurityServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/SubjectsServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/TimeTableServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/AdminFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/CleanerFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/GradeReportFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/ImportantDatesFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/NoticesFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/SecurityFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/SubjectsFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/factory/TimetableFactoryTest.java" />
       </list>
     </option>
   </component>
@@ -163,11 +327,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="11" />
+    <option name="width" value="1348" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -178,7 +341,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,7 +381,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -228,8 +390,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -251,6 +431,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dimitri" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -265,15 +454,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556719943796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557933203460" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/New folder/sms-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YesSpring" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -284,8 +478,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.dimitri.Repository.impl" />
       <recent name="com.dimitri.factory" />
+      <recent name="com.dimitri.service.impl" />
+      <recent name="com.dimitri.Repository.impl" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dimitri.Repository" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -307,82 +505,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentRepositoryImplTest.getAll">
-    <configuration name="ClassesRepositoryImplTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TimetableFactoryTest.getTimetable">
+    <configuration name="ImportantDatesFactoryTest.getImportantDates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AttendanceSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dimitri.Repository.impl.*" />
+          <option name="PATTERN" value="com.dimitri.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dimitri.Repository.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.Repository.impl.ClassesRepositoryImplTest" />
-      <option name="METHOD_NAME" value="getAll" />
+      <option name="PACKAGE_NAME" value="com.dimitri.factory" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.factory.ImportantDatesFactoryTest" />
+      <option name="METHOD_NAME" value="getImportantDates" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassesRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoticesFactoryTest.getNotices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AttendanceSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dimitri.Repository.impl.*" />
+          <option name="PATTERN" value="com.dimitri.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dimitri.Repository.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.Repository.impl.ClassesRepositoryImplTest" />
-      <option name="METHOD_NAME" value="update" />
+      <option name="PACKAGE_NAME" value="com.dimitri.factory" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.factory.NoticesFactoryTest" />
+      <option name="METHOD_NAME" value="getNotices" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SecurityFactoryTest.getSecurity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AttendanceSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dimitri.Repository.impl.*" />
+          <option name="PATTERN" value="com.dimitri.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dimitri.Repository.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.Repository.impl.StudentRepositoryImplTest" />
-      <option name="METHOD_NAME" value="create" />
+      <option name="PACKAGE_NAME" value="com.dimitri.factory" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.factory.SecurityFactoryTest" />
+      <option name="METHOD_NAME" value="getSecurity" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRepositoryImplTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubjectsFactoryTest.getSubjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AttendanceSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dimitri.Repository.impl.*" />
+          <option name="PATTERN" value="com.dimitri.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dimitri.Repository.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.Repository.impl.StudentRepositoryImplTest" />
-      <option name="METHOD_NAME" value="getAll" />
+      <option name="PACKAGE_NAME" value="com.dimitri.factory" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.factory.SubjectsFactoryTest" />
+      <option name="METHOD_NAME" value="getSubjects" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TimetableFactoryTest.getTimetable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AttendanceSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dimitri.Repository.impl.*" />
+          <option name="PATTERN" value="com.dimitri.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dimitri.Repository.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.Repository.impl.StudentRepositoryImplTest" />
-      <option name="METHOD_NAME" value="update" />
+      <option name="PACKAGE_NAME" value="com.dimitri.factory" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.factory.TimetableFactoryTest" />
+      <option name="METHOD_NAME" value="getTimetable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -390,11 +588,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentRepositoryImplTest.getAll" />
-        <item itemvalue="JUnit.StudentRepositoryImplTest.create" />
-        <item itemvalue="JUnit.ClassesRepositoryImplTest.update" />
-        <item itemvalue="JUnit.StudentRepositoryImplTest.update" />
-        <item itemvalue="JUnit.ClassesRepositoryImplTest.getAll" />
+        <item itemvalue="JUnit.TimetableFactoryTest.getTimetable" />
+        <item itemvalue="JUnit.SubjectsFactoryTest.getSubjects" />
+        <item itemvalue="JUnit.SecurityFactoryTest.getSecurity" />
+        <item itemvalue="JUnit.NoticesFactoryTest.getNotices" />
+        <item itemvalue="JUnit.ImportantDatesFactoryTest.getImportantDates" />
       </list>
     </recent_temporary>
   </component>
@@ -428,56 +626,62 @@
       <workItem from="1556539418624" duration="8539000" />
       <workItem from="1556642479131" duration="2440000" />
       <workItem from="1556647494093" duration="3905000" />
-      <workItem from="1556705748558" duration="13713000" />
+      <workItem from="1556705748558" duration="16934000" />
+      <workItem from="1557143319613" duration="8348000" />
+      <workItem from="1557243146988" duration="10766000" />
+      <workItem from="1557334017122" duration="5150000" />
+      <workItem from="1557862190236" duration="2824000" />
+      <workItem from="1557904537664" duration="15270000" />
+      <workItem from="1557931139344" duration="1664000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClassesRepositoryImplTest_update - 2019.05.01 at 14h 09m 41s.xml">
-      <configuration name="ClassesRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="NameServiceImplTest - 2019.05.08 at 20h 15m 11s.xml">
+      <configuration name="NameServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassesRepositoryImplTest_delete - 2019.05.01 at 14h 11m 44s.xml">
-      <configuration name="ClassesRepositoryImplTest.delete" configurationId="JUnit" />
+    <history-entry file="AddressServiceImplTest - 2019.05.08 at 20h 15m 26s.xml">
+      <configuration name="AddressServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassesRepositoryImplTest_getAll - 2019.05.01 at 14h 12m 15s.xml">
-      <configuration name="ClassesRepositoryImplTest.getAll" configurationId="JUnit" />
+    <history-entry file="AdminFactoryTest_getAdmin - 2019.05.15 at 16h 44m 48s.xml">
+      <configuration name="AdminFactoryTest.getAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentRepositoryImplTest_update - 2019.05.01 at 15h 24m 33s.xml">
-      <configuration name="StudentRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="CleanerFactoryTest_getCleaner - 2019.05.15 at 16h 47m 28s.xml">
+      <configuration name="CleanerFactoryTest.getCleaner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentRepositoryImplTest_update - 2019.05.01 at 15h 25m 27s.xml">
-      <configuration name="StudentRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="GradeReportFactoryTest_getGradeReport - 2019.05.15 at 16h 50m 16s.xml">
+      <configuration name="GradeReportFactoryTest.getGradeReport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassesRepositoryImplTest_update - 2019.05.01 at 15h 30m 25s.xml">
-      <configuration name="ClassesRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="ImportantDatesFactoryTest_getImportantDates - 2019.05.15 at 16h 52m 25s.xml">
+      <configuration name="ImportantDatesFactoryTest.getImportantDates" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClassesRepositoryImplTest_update - 2019.05.01 at 15h 31m 24s.xml">
-      <configuration name="ClassesRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="NoticesFactoryTest_getNotices - 2019.05.15 at 16h 54m 20s.xml">
+      <configuration name="NoticesFactoryTest.getNotices" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentRepositoryImplTest_create - 2019.05.01 at 15h 32m 57s.xml">
-      <configuration name="StudentRepositoryImplTest.create" configurationId="JUnit" />
+    <history-entry file="SecurityFactoryTest_getSecurity - 2019.05.15 at 16h 55m 28s.xml">
+      <configuration name="SecurityFactoryTest.getSecurity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentRepositoryImplTest_create - 2019.05.01 at 15h 34m 09s.xml">
-      <configuration name="StudentRepositoryImplTest.create" configurationId="JUnit" />
+    <history-entry file="SubjectsFactoryTest_getSubjects - 2019.05.15 at 16h 57m 41s.xml">
+      <configuration name="SubjectsFactoryTest.getSubjects" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentRepositoryImplTest_getAll - 2019.05.01 at 15h 34m 26s.xml">
-      <configuration name="StudentRepositoryImplTest.getAll" configurationId="JUnit" />
+    <history-entry file="TimetableFactoryTest_getTimetable - 2019.05.15 at 16h 59m 52s.xml">
+      <configuration name="TimetableFactoryTest.getTimetable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81470000" />
+    <option name="totallyTimeSpent" value="128713000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.33585477" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.3517398" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.3207262" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3289689" />
@@ -488,9 +692,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -500,17 +706,19 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.33585477" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.3464448" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.3207262" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -522,6 +730,8 @@
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -531,454 +741,428 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SemesterRepositoryImplTest.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/CourseRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/GradeReportRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="155">
+          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/DepartmentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/EnrollRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/LecturerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/RoomRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/SchoolRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/SemesterRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/IService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/BuildingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/BuildingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/BuildingRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/EnrollRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/LecturerRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/RoomRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SchoolRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SemesterRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/ClassesFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24803">
-          <caret line="1521" column="5" selection-start-line="1521" selection-start-column="5" selection-end-line="1521" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/ClassesFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/function/Predicate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/GradeReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Building.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#1560#1561#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
-          <folding>
-            <element signature="e#1801#1802#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Enroll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1994#1995#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Lecturer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/School.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Semester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/domain/Classes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
-          <folding>
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SchoolRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/ClassesRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/RoomRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/LecturerRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/EnrollRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SemesterRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/BuildingRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="44" column="27" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/BuildingRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/ClassesRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/CourseRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/CourseRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/ClassesRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/DepartmentRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/StudentRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/ImportantDatesRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/NoticesRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SecurityRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/TimetableRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/Repository/impl/SubjectsRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/StudentServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/AdminServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/AdminRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/CleanerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/CleanerRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/CleanerServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/GradeReportRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/GradeReportServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/GradeReportServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ImportantDatesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/ImportantDatesRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/ImportantDatesServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NoticesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/NoticesRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/NoticesServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SecurityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SecurityRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="16" selection-start-line="16" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/SecurityServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SubjectsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/SubjectsRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/SubjectsServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/TimetableRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/StudentRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="78" column="46" selection-start-line="76" selection-start-column="8" selection-end-line="78" selection-end-column="46" />
+        <state relative-caret-position="325">
+          <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/Repository/impl/DepartmentRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/TimeTableServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state relative-caret-position="325">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/AddressFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/AdminFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/AdminFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/CleanerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/CleanerFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/StudentFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/GradeReportFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/GradeReportFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/ImportantDatesFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/ImportantDatesFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/NoticesFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/NoticesFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/SecurityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/SecurityFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/SubjectsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/TimetableFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/factory/TimetableFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/factory/SubjectsFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/service/impl/TimeTableServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
         </state>
       </provider>
     </entry>

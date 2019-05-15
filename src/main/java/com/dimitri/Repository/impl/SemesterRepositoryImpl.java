@@ -43,7 +43,10 @@ public class SemesterRepositoryImpl implements SemesterRepository {
 
     @Override
     public void delete(String semesterCode) {
-        this.semesters.removeIf(semester -> semester.getSemesterCode()==semesterCode);
+        Semester class1 = findSemester(semesterCode);
+        if(class1 != null){
+            this.semesters.remove(class1);
+        }
     }
 
     @Override

@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -16,13 +17,7 @@ public class StudentRepositoryImplTest {
 
     private StudentRepository repository;
     private Student c1;
-
-
-    private Student getSavedClass(){
-        Set<Student> classes = this.repository.getAll();
-        this.repository.create(this.c1);
-        return classes.iterator().next();
-    }
+    Set<Student>students = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
@@ -36,46 +31,45 @@ public class StudentRepositoryImplTest {
         Student student= this.repository.create(this.c1);
         String name = "Dimitri";
         System.out.println("In create, created = " + student);
-        getAll();
         Assert.assertEquals(name,student.getStudentName());
-        Assert.assertNotNull(student);
+        Assert.assertNotNull(students);
         Assert.assertSame(student, this.c1);
     }
 
     @Test
     public void update() {
+        Student student= this.repository.create(this.c1);
         String newStudentId = "133";
-        Student newStudent = new Student.Builder().copy(getSavedClass()).studentId(newStudentId).build();
+        Student newStudent = new Student.Builder().copy(student).studentId(newStudentId).build();
+        this.repository.create(newStudent);
         System.out.println("In update, Will update = " + newStudent);
         Student updated = this.repository.update(newStudent);
         System.out.println("In update, updated = " + updated);
         Assert.assertSame(newStudent.getStudentId(), updated.getStudentId());
-        getAll();
     }
 
     @Test
     public void delete() {
-        Student student = getSavedClass();
+        Student student= this.repository.create(this.c1);
         this.repository.delete(student.getStudentId());
-        getAll();
+        System.out.println(this.students);
     }
 
     @Test
     public void read() {
-        Student saved = getSavedClass();
-        System.out.println("In read, courseId = "+ saved.getStudentId());
-        Student read = this.repository.read(saved.getStudentId());
+        Student student= this.repository.create(this.c1);
+        System.out.println("In read, courseId = "+ student.getStudentId());
+        Student read = this.repository.read(student.getStudentId());
         System.out.println("In read, read = "+ read);
-        getAll();
-        Assert.assertEquals(read, saved);
+        Assert.assertEquals(c1.getStudentId(), this.repository.read(c1.getStudentId()).getStudentId());
 
     }
 
 
     @Test
     public void getAll() {
-        Set<Student> students = this.repository.getAll();
-        System.out.println("In getAll, all = " + students);
-        Assert.assertSame(1, students.size());
+        Set<Student> studentsSet = this.repository.getAll();
+        System.out.println("In getAll, all = " + studentsSet);
+        Assert.assertSame(1, studentsSet.size());
     }
 }

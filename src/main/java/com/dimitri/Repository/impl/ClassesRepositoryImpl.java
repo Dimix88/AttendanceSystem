@@ -34,9 +34,10 @@ public class ClassesRepositoryImpl implements ClassesRepository {
 
     @Override
     public Classes update(Classes classes1) {
-        if(this.classes.contains(classes1)){
-            this.classes.remove(classes1);
-            this.classes.add(classes1);
+        Classes toDelete = findClass(classes1.getClassCode());
+        if(toDelete != null) {
+            this.classes.remove(toDelete);
+            return create(classes1);
         }
         return classes1;
     }
@@ -52,8 +53,7 @@ public class ClassesRepositoryImpl implements ClassesRepository {
 
     @Override
     public Classes read(final String classcode) {
-        Classes class1 = findClass(classcode);
-        return class1;
+        return findClass(classcode);
     }
     public Set<Classes>getAll(){
         return this.classes;

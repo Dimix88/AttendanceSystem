@@ -35,11 +35,12 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     public Student update(Student student) {
-        if(this.students.contains(student)){
-            this.students.remove(student);
-            this.students.add(student);
+        Student toDelete = findStudent(student.getStudentId());
+        if(toDelete != null) {
+            this.students.remove(toDelete);
+            return create(student);
         }
-            return student;
+        return null;
     }
 
     @Override

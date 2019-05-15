@@ -33,9 +33,10 @@ public class CourseRepositoryImpl implements CourseRepository {
 
     @Override
     public Course update(Course course) {
-        if(this.courses.contains(course)){
-            this.courses.remove(course);
-            this.courses.add(course);
+        Course toDelete = findCourse(course.getCourseId());
+        if(toDelete != null) {
+            this.courses.remove(toDelete);
+            return create(course);
         }
         return course;
     }

@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -15,13 +16,7 @@ public class DepartmentRepositoryImplTest {
 
     private DepartmentRepository repository;
     private Department c1;
-
-
-    private Department getSavedClass(){
-        Set<Department> departments = this.repository.getAll();
-        this.repository.create(this.c1);
-        return departments.iterator().next();
-    }
+    Set<Department>departments = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
@@ -33,9 +28,8 @@ public class DepartmentRepositoryImplTest {
     @Test
     public void create() {
         Department department= this.repository.create(this.c1);
-        String name = "Accounting";
+        String name = "Marketing";
         System.out.println("In create, created = " + department);
-        getAll();
         Assert.assertEquals(name,department.getDeptName());
         Assert.assertNotNull(department);
         Assert.assertSame(department, this.c1);
@@ -43,30 +37,29 @@ public class DepartmentRepositoryImplTest {
 
     @Test
     public void update() {
+        Department department= this.repository.create(this.c1);
         String newDeptId = "133";
-        Department newDept = new Department.Builder().copy(getSavedClass()).deptName(newDeptId).build();
+        Department newDept = new Department.Builder().copy(department).deptName(newDeptId).build();
         System.out.println("In update, Will update = " + newDept);
         Department updated = this.repository.update(newDept);
         System.out.println("In update, updated = " + updated);
         Assert.assertSame(newDept.getDeptName(), updated.getDeptName());
-        getAll();
     }
 
     @Test
     public void delete() {
-        Department department = getSavedClass();
+        Department department= this.repository.create(this.c1);
         this.repository.delete(department.getDeptCode());
-        getAll();
+        System.out.println(departments);
     }
 
     @Test
     public void read() {
-        Department saved = getSavedClass();
-        System.out.println("In read, courseId = "+ saved.getDeptCode());
-        Department read = this.repository.read(saved.getDeptCode());
+        Department department= this.repository.create(this.c1);
+        System.out.println("In read, courseId = "+ department.getDeptCode());
+        Department read = this.repository.read(department.getDeptCode());
         System.out.println("In read, read = "+ read);
-        getAll();
-        Assert.assertEquals(read, saved);
+        Assert.assertEquals(c1.getDeptCode(), this.repository.read(c1.getDeptCode()).getDeptCode());
     }
 
 

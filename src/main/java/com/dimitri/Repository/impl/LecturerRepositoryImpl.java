@@ -44,7 +44,10 @@ public class LecturerRepositoryImpl implements LecturerRepository {
 
     @Override
     public void delete(String lecId) {
-        this.lecturers.removeIf(lecturer -> lecturer.getLecId()==lecId);
+        Lecturer lecturer = findLecturer(lecId);
+        if(lecturer != null){
+            this.lecturers.remove(lecturer);
+        }
     }
 
     @Override

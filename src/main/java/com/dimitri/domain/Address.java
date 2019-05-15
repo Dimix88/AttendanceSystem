@@ -55,6 +55,13 @@ public class Address {
             this.province = province;
             return this;
         }
+        public Builder copy(Address address){
+            this.streetAddres = address.streetAddres;
+            this.postalAddress = address.postalAddress;
+            this.city = address.city;
+            this.province = address.province;
+            return this;
+        }
         public Address build(){return new Address(this);}
     }
 }

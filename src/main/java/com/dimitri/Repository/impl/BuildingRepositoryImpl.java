@@ -14,6 +14,7 @@ public class BuildingRepositoryImpl implements BuildingRepository {
     private BuildingRepositoryImpl(){
         this.buildings = new HashSet<>();
     }
+
     private Building findBuilding(String bldgCode){
         for (Building classes2: this.buildings){
             if (classes2.getBldgCode().equals(bldgCode))
@@ -32,11 +33,12 @@ public class BuildingRepositoryImpl implements BuildingRepository {
 
     @Override
     public Building update(Building bldg) {
-        if(this.buildings.contains(bldg)){
-            this.buildings.remove(bldg);
-            this.buildings.add(bldg);
+        Building toDelete = findBuilding(bldg.getBldgCode());
+        if(toDelete != null) {
+            this.buildings.remove(toDelete);
+            return create(bldg);
         }
-        return bldg;
+        return null;
     }
 
     @Override

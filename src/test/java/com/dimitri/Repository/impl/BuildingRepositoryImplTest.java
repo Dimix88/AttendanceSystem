@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -14,13 +15,9 @@ import static org.junit.Assert.*;
 public class BuildingRepositoryImplTest {
     private BuildingRepository repository;
     private Building c1;
+    Set<Building>buildings = new HashSet<>();
 
 
-    private Building getSavedClass(){
-        Set<Building> buildings = this.repository.getAll();
-        this.repository.create(this.c1);
-        return buildings.iterator().next();
-    }
     @Before
     public void setUp() throws Exception {
         this.repository = BuildingRepositoryImpl.getRepository();
@@ -32,7 +29,6 @@ public class BuildingRepositoryImplTest {
         Building building= this.repository.create(this.c1);
         String name = "A-Building";
         System.out.println("In create, created = " + building);
-        getAll();
         Assert.assertEquals(name,building.getBldgName());
         Assert.assertNotNull(building);
         Assert.assertSame(building, this.c1);
@@ -40,38 +36,38 @@ public class BuildingRepositoryImplTest {
 
     @Test
     public void update() {
+        Building building= this.repository.create(this.c1);
         String newBuildingName = "133";
-        Building newBuilding = new Building.Builder().copy(getSavedClass()).bldgName(newBuildingName).build();
+        Building newBuilding = new Building.Builder().copy(building).bldgName(newBuildingName).build();
+        this.repository.create(newBuilding);
         System.out.println("In update, Will update = " + newBuilding);
         Building updated = this.repository.update(newBuilding);
         System.out.println("In update, updated = " + updated);
         Assert.assertSame(newBuilding.getBldgName(), updated.getBldgName());
-        getAll();
     }
 
     @Test
     public void delete() {
-        Building building = getSavedClass();
+        Building building= this.repository.create(this.c1);
         this.repository.delete(building.getBldgCode());
-        getAll();
+        System.out.println(this.buildings);
     }
 
     @Test
     public void read() {
-        Building saved = getSavedClass();
-        System.out.println("In read, courseId = "+ saved.getBldgCode());
-        Building read = this.repository.read(saved.getBldgCode());
+        Building building= this.repository.create(this.c1);
+        System.out.println("In read, courseId = "+ building.getBldgCode());
+        Building read = this.repository.read(building.getBldgCode());
         System.out.println("In read, read = "+ read);
-        getAll();
-        Assert.assertEquals(read, saved);
+        Assert.assertEquals(c1.getBldgCode(), this.repository.read(c1.getBldgCode()).getBldgCode());
     }
 
 
 
     @Test
     public void getAll() {
-        Set<Building> buildings = this.repository.getAll();
-        System.out.println("In getAll, all = " + buildings);
-        Assert.assertSame(1, buildings.size());
+        Set<Building> buildingsSet = this.repository.getAll();
+        System.out.println("In getAll, all = " + buildingsSet);
+        Assert.assertSame(1, buildingsSet.size());
     }
 }

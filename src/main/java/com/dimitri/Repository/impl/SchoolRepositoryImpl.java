@@ -42,7 +42,10 @@ public class SchoolRepositoryImpl implements SchoolRepository {
 
     @Override
     public void delete(String schoolCode) {
-        this.schools.removeIf(school -> school.getSchoolCode()==schoolCode);
+        School class1 = findSchool(schoolCode);
+        if(class1 != null){
+            this.schools.remove(class1);
+        }
     }
 
     @Override

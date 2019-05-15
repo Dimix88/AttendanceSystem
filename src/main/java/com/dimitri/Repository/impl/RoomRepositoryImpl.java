@@ -42,7 +42,10 @@ public class RoomRepositoryImpl implements RoomRepository {
 
     @Override
     public void delete(String roomCode) {
-        this.rooms.removeIf(room -> room.getRoomCode()==roomCode);
+        Room class1 = findRoom(roomCode);
+        if(class1 != null){
+            this.rooms.remove(class1);
+        }
     }
 
     @Override
