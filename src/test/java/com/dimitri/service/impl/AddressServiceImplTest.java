@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.AddressRepository;
-import com.dimitri.Repository.impl.AddressRepositoryImpl;
+import com.dimitri.repository.AddressIRepository;
+import com.dimitri.repository.impl.AddressIRepositoryImpl;
 import com.dimitri.domain.Address;
 import com.dimitri.factory.AddressFactory;
 import org.junit.Assert;
@@ -11,17 +11,15 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class AddressServiceImplTest {
 
-    private AddressRepository repository;
+    private AddressIRepository repository;
     private Address c1;
     Set<Address> addresses = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = AddressRepositoryImpl.getRepository();
+        this.repository = AddressIRepositoryImpl.getRepository();
         c1 = AddressFactory.getAddress("22 Park Street","P.O.Box 1","Cape Town","Western Cape");
 
     }

@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.RoomRepository;
-import com.dimitri.Repository.impl.RoomRepositoryImpl;
+import com.dimitri.repository.RoomIRepository;
+import com.dimitri.repository.impl.RoomIRepositoryImpl;
 import com.dimitri.domain.Room;
 import com.dimitri.factory.RoomFactory;
 import org.junit.Assert;
@@ -11,17 +11,15 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class RoomServiceImplTest {
 
-    private RoomRepository repository;
+    private RoomIRepository repository;
     private Room c1;
     Set<Room> rooms = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = RoomRepositoryImpl.getRepository();
+        this.repository = RoomIRepositoryImpl.getRepository();
         c1 = RoomFactory.getRoom("Large");
 
     }

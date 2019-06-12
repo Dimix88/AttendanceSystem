@@ -1,23 +1,20 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.StudentRepository;
-import com.dimitri.Repository.impl.StudentRepositoryImpl;
+import com.dimitri.repository.StudentIRepository;
 import com.dimitri.domain.Student;
 import com.dimitri.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service("ServiceImpl")
 public class StudentServiceImpl implements StudentService {
-    private static StudentServiceImpl service = null;
-    private StudentRepository repository = null;
+    @Autowired
+    @Qualifier("InMemory")
+    private StudentIRepository repository = null;
 
-    private StudentServiceImpl(){
-        this.repository = StudentRepositoryImpl.getRepository();
-    }
-    public static StudentServiceImpl getService(){
-        if(service == null) service = new StudentServiceImpl();
-        return service;
-    }
     @Override
     public Set<Student> getAll() {
         return this.repository.getAll();

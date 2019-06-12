@@ -1,18 +1,22 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.RoomRepository;
-import com.dimitri.Repository.impl.RoomRepositoryImpl;
+import com.dimitri.repository.RoomIRepository;
+import com.dimitri.repository.impl.RoomIRepositoryImpl;
 import com.dimitri.domain.Room;
 import com.dimitri.service.RoomService;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 import java.util.Set;
-
+@Service("ServiceImpl13")
 public class RoomServiceImpl implements RoomService {
+    @Autowired
+    @Qualifier("RoomRepository")
     private static RoomServiceImpl service = null;
-    private RoomRepository repository = null;
+    private RoomIRepository repository = null;
 
     private RoomServiceImpl(){
-        this.repository = RoomRepositoryImpl.getRepository();
+        this.repository = RoomIRepositoryImpl.getRepository();
     }
     public static RoomServiceImpl getService(){
         if(service == null) service = new RoomServiceImpl();

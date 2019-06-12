@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.SubjectsRepository;
-import com.dimitri.Repository.impl.SubjectsRepositoryImpl;
+import com.dimitri.repository.SubjectsIRepository;
+import com.dimitri.repository.impl.SubjectsIRepositoryImpl;
 import com.dimitri.domain.Subjects;
 import com.dimitri.service.SubjectsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl17")
 public class SubjectsServiceImpl implements SubjectsService {
+    @Autowired
+    @Qualifier("SubjectsRepository")
     private static SubjectsServiceImpl service = null;
-    private SubjectsRepository repository = null;
+    private SubjectsIRepository repository = null;
 
     private SubjectsServiceImpl(){
-        this.repository = SubjectsRepositoryImpl.getRepository();
+        this.repository = SubjectsIRepositoryImpl.getRepository();
     }
     public static SubjectsServiceImpl getService(){
         if(service == null) service = new SubjectsServiceImpl();

@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.BuildingRepository;
-import com.dimitri.Repository.impl.BuildingRepositoryImpl;
+import com.dimitri.repository.BuildingIRepository;
+import com.dimitri.repository.impl.BuildingIRepositoryImpl;
 import com.dimitri.domain.Building;
 import com.dimitri.factory.BuildingFactory;
 import org.junit.Assert;
@@ -11,18 +11,16 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class BuildingServiceImplTest {
 
-    private BuildingRepository repository;
+    private BuildingIRepository repository;
     private Building c1;
     Set<Building> buildings = new HashSet<>();
 
 
     @Before
     public void setUp() throws Exception {
-        this.repository = BuildingRepositoryImpl.getRepository();
+        this.repository = BuildingIRepositoryImpl.getRepository();
         c1 = BuildingFactory.getBuilding("A-Building","21 Street");
 
     }

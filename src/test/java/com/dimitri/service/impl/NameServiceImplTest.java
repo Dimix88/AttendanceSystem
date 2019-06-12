@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.NameRepository;
-import com.dimitri.Repository.impl.NameRepositoryImpl;
+import com.dimitri.repository.NameIRepository;
+import com.dimitri.repository.impl.NameIRepositoryImpl;
 import com.dimitri.domain.Name;
 import com.dimitri.factory.NameFactory;
 import org.junit.Assert;
@@ -11,17 +11,15 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class NameServiceImplTest {
 
-    private NameRepository repository;
+    private NameIRepository repository;
     private Name c1;
     Set<Name> names = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = NameRepositoryImpl.getRepository();
+        this.repository = NameIRepositoryImpl.getRepository();
         c1 = NameFactory.getName("Dimitri","John","Bells");
 
     }

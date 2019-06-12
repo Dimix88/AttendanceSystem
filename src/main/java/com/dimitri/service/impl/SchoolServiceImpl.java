@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.SchoolRepository;
-import com.dimitri.Repository.impl.SchoolRepositoryImpl;
+import com.dimitri.repository.SchoolIRepository;
+import com.dimitri.repository.impl.SchoolIRepositoryImpl;
 import com.dimitri.domain.School;
 import com.dimitri.service.SchoolService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl14")
 public class SchoolServiceImpl implements SchoolService {
+    @Autowired
+    @Qualifier("SchoolRepository")
     private static SchoolServiceImpl service = null;
-    private SchoolRepository repository = null;
+    private SchoolIRepository repository = null;
 
     private SchoolServiceImpl(){
-        this.repository = SchoolRepositoryImpl.getRepository();
+        this.repository = SchoolIRepositoryImpl.getRepository();
     }
     public static SchoolServiceImpl getService(){
         if(service == null) service =new SchoolServiceImpl();

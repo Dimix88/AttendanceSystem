@@ -1,18 +1,24 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.BuildingRepository;
-import com.dimitri.Repository.impl.BuildingRepositoryImpl;
+import com.dimitri.repository.BuildingIRepository;
+import com.dimitri.repository.impl.BuildingIRepositoryImpl;
 import com.dimitri.domain.Building;
 import com.dimitri.service.BuildingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service("ServiceImpl20")
 public class BuildingServiceImpl implements BuildingService {
+        @Autowired
+        @Qualifier("BuildingRepository")
         private static BuildingServiceImpl service = null;
-        private BuildingRepository repository = null;
+        private BuildingIRepository repository = null;
 
         private BuildingServiceImpl(){
-            this.repository = BuildingRepositoryImpl.getRepository();
+            this.repository = BuildingIRepositoryImpl.getRepository();
     }
     public static BuildingServiceImpl getService(){
             if(service == null) service = new BuildingServiceImpl();

@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.SecurityRepository;
-import com.dimitri.Repository.impl.SecurityRepositoryImpl;
+import com.dimitri.repository.SecurityIRepository;
+import com.dimitri.repository.impl.SecurityIRepositoryImpl;
 import com.dimitri.domain.Security;
 import com.dimitri.service.SecurityService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl15")
 public class SecurityServiceImpl implements SecurityService {
+    @Autowired
+    @Qualifier("SecurityRepository")
     private static SecurityServiceImpl service = null;
-    private SecurityRepository repository = null;
+    private SecurityIRepository repository = null;
 
     private SecurityServiceImpl(){
-        this.repository = SecurityRepositoryImpl.getRepository();
+        this.repository = SecurityIRepositoryImpl.getRepository();
     }
     public static SecurityServiceImpl getService(){
         if(service == null) service = new SecurityServiceImpl();

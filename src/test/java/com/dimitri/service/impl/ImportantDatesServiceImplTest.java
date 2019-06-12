@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.ImportantdatesRepository;
-import com.dimitri.Repository.impl.ImportantDatesRepositoryImpl;
+import com.dimitri.repository.ImportantdatesIRepository;
+import com.dimitri.repository.impl.ImportantDatesIRepositoryImpl;
 import com.dimitri.domain.ImportantDates;
 import com.dimitri.factory.ImportantDatesFactory;
 import org.junit.Assert;
@@ -11,16 +11,14 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class ImportantDatesServiceImplTest {
-    private ImportantdatesRepository repository;
+    private ImportantdatesIRepository repository;
     private ImportantDates c1;
     Set<ImportantDates> importantDates = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = ImportantDatesRepositoryImpl.getRepository();
+        this.repository = ImportantDatesIRepositoryImpl.getRepository();
         c1 = ImportantDatesFactory.getImportantDates("20/11/2019","25/11/2019");
 
     }

@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.EnrollRepository;
-import com.dimitri.Repository.impl.EnrollRepositoryImpl;
+import com.dimitri.repository.EnrollIRepository;
+import com.dimitri.repository.impl.EnrollIRepositoryImpl;
 import com.dimitri.domain.Enroll;
 import com.dimitri.service.EnrollService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl7")
 public class EnrollServiceImpl implements EnrollService {
+    @Autowired
+    @Qualifier("EnrollRepository")
     private static EnrollServiceImpl service = null;
-    private EnrollRepository repository = null;
+    private EnrollIRepository repository = null;
 
     private EnrollServiceImpl(){
-        this.repository = EnrollRepositoryImpl.getRepository();
+        this.repository = EnrollIRepositoryImpl.getRepository();
     }
     public static EnrollServiceImpl getService(){
         if(service == null) service = new EnrollServiceImpl();

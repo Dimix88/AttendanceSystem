@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.SecurityRepository;
-import com.dimitri.Repository.impl.SecurityRepositoryImpl;
+import com.dimitri.repository.SecurityIRepository;
+import com.dimitri.repository.impl.SecurityIRepositoryImpl;
 import com.dimitri.domain.Security;
 import com.dimitri.factory.SecurityFactory;
 import org.junit.Assert;
@@ -11,16 +11,14 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class SecurityServiceImplTest {
-    private SecurityRepository repository;
+    private SecurityIRepository repository;
     private Security c1;
     Set<Security> securities = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = SecurityRepositoryImpl.getRepository();
+        this.repository = SecurityIRepositoryImpl.getRepository();
         c1 = SecurityFactory.getSecurity("Dimitri","Ferus","1000000","mm@gmail.com");
 
     }

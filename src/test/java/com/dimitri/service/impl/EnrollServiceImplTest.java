@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.EnrollRepository;
-import com.dimitri.Repository.impl.EnrollRepositoryImpl;
+import com.dimitri.repository.EnrollIRepository;
+import com.dimitri.repository.impl.EnrollIRepositoryImpl;
 import com.dimitri.domain.Enroll;
 import com.dimitri.factory.EnrollFactory;
 import org.junit.Assert;
@@ -11,17 +11,15 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class EnrollServiceImplTest {
 
-    private EnrollRepository repository;
+    private EnrollIRepository repository;
     private Enroll c1;
     Set<Enroll> enrolls = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = EnrollRepositoryImpl.getRepository();
+        this.repository = EnrollIRepositoryImpl.getRepository();
         c1 = EnrollFactory.getEnroll("100","3000","19/06/2019","A");
 
 

@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.CleanerRepository;
-import com.dimitri.Repository.impl.CleanerRepositoryImpl;
+import com.dimitri.repository.CleanerIRepository;
+import com.dimitri.repository.impl.CleanerIRepositoryImpl;
 import com.dimitri.domain.Cleaner;
 import com.dimitri.service.CleanerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl4")
 public class CleanerServiceImpl implements CleanerService {
+    @Autowired
+    @Qualifier("CleanerRepository")
     private static CleanerServiceImpl service = null;
-    private CleanerRepository repository = null;
+    private CleanerIRepository repository = null;
 
     private CleanerServiceImpl(){
-        this.repository = CleanerRepositoryImpl.getRepository();
+        this.repository = CleanerIRepositoryImpl.getRepository();
     }
     public static CleanerServiceImpl getService(){
         if(service == null) service = new CleanerServiceImpl();

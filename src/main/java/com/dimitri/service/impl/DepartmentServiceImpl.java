@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.DepartmentRepository;
-import com.dimitri.Repository.impl.DepartmentRepositoryImpl;
+import com.dimitri.repository.DepartmentIRepository;
+import com.dimitri.repository.impl.DepartmentIRepositoryImpl;
 import com.dimitri.domain.Department;
 import com.dimitri.service.DepartmentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl6")
 public class DepartmentServiceImpl implements DepartmentService {
+    @Autowired
+    @Qualifier("DepartmentRepository")
     private static DepartmentServiceImpl service = null;
-    private DepartmentRepository repository = null;
+    private DepartmentIRepository repository = null;
 
     private DepartmentServiceImpl(){
-        this.repository = DepartmentRepositoryImpl.getRepository();
+        this.repository = DepartmentIRepositoryImpl.getRepository();
     }
     public static DepartmentServiceImpl getService(){
         if(service == null)service = new DepartmentServiceImpl();

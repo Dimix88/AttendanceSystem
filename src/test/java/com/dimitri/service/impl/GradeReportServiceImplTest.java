@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.GradeReportRepository;
-import com.dimitri.Repository.impl.GradeReportRepositoryImpl;
+import com.dimitri.repository.GradeReportIRepository;
+import com.dimitri.repository.impl.GradeReportIRepositoryImpl;
 import com.dimitri.domain.GradeReport;
 import com.dimitri.factory.GradeReportFactory;
 import org.junit.Assert;
@@ -11,16 +11,14 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class GradeReportServiceImplTest {
-    private GradeReportRepository repository;
+    private GradeReportIRepository repository;
     private GradeReport c1;
     Set<GradeReport> gradeReports = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = GradeReportRepositoryImpl.getRepository();
+        this.repository = GradeReportIRepositoryImpl.getRepository();
         c1 = GradeReportFactory.getGradeReport("A","95");
 
     }

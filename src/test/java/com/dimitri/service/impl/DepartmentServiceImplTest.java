@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.DepartmentRepository;
-import com.dimitri.Repository.impl.DepartmentRepositoryImpl;
+import com.dimitri.repository.DepartmentIRepository;
+import com.dimitri.repository.impl.DepartmentIRepositoryImpl;
 import com.dimitri.domain.Department;
 import com.dimitri.factory.DepartmentFactory;
 import org.junit.Assert;
@@ -11,17 +11,15 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class DepartmentServiceImplTest {
 
-    private DepartmentRepository repository;
+    private DepartmentIRepository repository;
     private Department c1;
     Set<Department> departments = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = DepartmentRepositoryImpl.getRepository();
+        this.repository = DepartmentIRepositoryImpl.getRepository();
         c1 = DepartmentFactory.getDepartment("Marketing","UWC");
 
     }

@@ -1,7 +1,5 @@
 package com.dimitri.domain;
 
-import com.dimitri.Repository.EnrollRepository;
-
 import java.util.Objects;
 
 public class Enroll implements Comparable<Enroll> {

@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.LecturerRepository;
-import com.dimitri.Repository.impl.LecturerRepositoryImpl;
+import com.dimitri.repository.LecturerIRepository;
+import com.dimitri.repository.impl.LecturerIRepositoryImpl;
 import com.dimitri.domain.Lecturer;
 import com.dimitri.service.LecturerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl10")
 public class LecturerServiceImpl implements LecturerService {
+    @Autowired
+    @Qualifier("LecturerRepository")
     private static LecturerServiceImpl service = null;
-    private LecturerRepository repository = null;
+    private LecturerIRepository repository = null;
 
     private LecturerServiceImpl(){
-        this.repository = LecturerRepositoryImpl.getRepository();
+        this.repository = LecturerIRepositoryImpl.getRepository();
     }
     public static LecturerServiceImpl getService(){
         if(service == null) service = new LecturerServiceImpl();

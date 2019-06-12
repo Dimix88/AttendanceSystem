@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.NoticesRepository;
-import com.dimitri.Repository.impl.NoticesRepositoryImpl;
+import com.dimitri.repository.NoticesIRepository;
+import com.dimitri.repository.impl.NoticesIRepositoryImpl;
 import com.dimitri.domain.Notices;
 import com.dimitri.factory.NoticesFactory;
 import org.junit.Assert;
@@ -11,16 +11,14 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class NoticesServiceImplTest {
-    private NoticesRepository repository;
+    private NoticesIRepository repository;
     private Notices c1;
     Set<Notices> notices = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = NoticesRepositoryImpl.getRepository();
+        this.repository = NoticesIRepositoryImpl.getRepository();
         c1 = NoticesFactory.getNotices("eat");
 
     }

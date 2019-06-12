@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.SemesterRepository;
-import com.dimitri.Repository.impl.SemesterRepositoryImpl;
+import com.dimitri.repository.SemesterIRepository;
+import com.dimitri.repository.impl.SemesterIRepositoryImpl;
 import com.dimitri.domain.Semester;
 import com.dimitri.service.SemesterService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl16")
 public class SemesterServiceImpl implements SemesterService {
+    @Autowired
+    @Qualifier("SemesterRepository")
     private static SemesterServiceImpl service = null;
-    private SemesterRepository repository = null;
+    private SemesterIRepository repository = null;
 
     private SemesterServiceImpl(){
-        this.repository = SemesterRepositoryImpl.getRepository();
+        this.repository = SemesterIRepositoryImpl.getRepository();
     }
     public static SemesterServiceImpl getService(){
         if(service == null) service = new SemesterServiceImpl();

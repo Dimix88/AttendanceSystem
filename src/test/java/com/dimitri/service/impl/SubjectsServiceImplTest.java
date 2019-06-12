@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.SubjectsRepository;
-import com.dimitri.Repository.impl.SubjectsRepositoryImpl;
+import com.dimitri.repository.SubjectsIRepository;
+import com.dimitri.repository.impl.SubjectsIRepositoryImpl;
 import com.dimitri.domain.Subjects;
 import com.dimitri.factory.SubjectsFactory;
 import org.junit.Assert;
@@ -11,16 +11,14 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class SubjectsServiceImplTest {
-    private SubjectsRepository repository;
+    private SubjectsIRepository repository;
     private Subjects c1;
     Set<Subjects> subjects = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = SubjectsRepositoryImpl.getRepository();
+        this.repository = SubjectsIRepositoryImpl.getRepository();
         c1 = SubjectsFactory.getSubjects("2019","Marketing");
 
     }

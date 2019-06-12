@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.AddressRepository;
-import com.dimitri.Repository.impl.AddressRepositoryImpl;
+import com.dimitri.repository.AddressIRepository;
+import com.dimitri.repository.impl.AddressIRepositoryImpl;
 import com.dimitri.domain.Address;
 import com.dimitri.service.AddressService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl2")
 public class AddressServiceImpl implements AddressService {
+    @Autowired
+    @Qualifier("AddressRepository")
     private static AddressServiceImpl service = null;
-    private AddressRepository repository = null;
+    private AddressIRepository repository = null;
 
     private AddressServiceImpl(){
-        this.repository = AddressRepositoryImpl.getRepository();
+        this.repository = AddressIRepositoryImpl.getRepository();
     }
     public static AddressServiceImpl getService(){
         if(service == null) service = new AddressServiceImpl();

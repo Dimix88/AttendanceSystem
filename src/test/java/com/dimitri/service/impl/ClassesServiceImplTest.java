@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.ClassesRepository;
-import com.dimitri.Repository.impl.ClassesRepositoryImpl;
+import com.dimitri.repository.ClassesIRepository;
+import com.dimitri.repository.impl.ClassesIRepositoryImpl;
 import com.dimitri.domain.Classes;
 import com.dimitri.factory.ClassesFactory;
 import org.junit.Assert;
@@ -11,19 +11,17 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class ClassesServiceImplTest {
 
 
 
-    private ClassesRepository repository;
+    private ClassesIRepository repository;
     private Classes c1;
     Set<Classes> classes = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = ClassesRepositoryImpl.getRepository();
+        this.repository = ClassesIRepositoryImpl.getRepository();
         c1 = ClassesFactory.getClasses("111","200","10:00");
 
 

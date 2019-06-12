@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.ImportantdatesRepository;
-import com.dimitri.Repository.impl.ImportantDatesRepositoryImpl;
+import com.dimitri.repository.ImportantdatesIRepository;
+import com.dimitri.repository.impl.ImportantDatesIRepositoryImpl;
 import com.dimitri.domain.ImportantDates;
 import com.dimitri.service.ImportantdatesService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl9")
 public class ImportantDatesServiceImpl implements ImportantdatesService {
+    @Autowired
+    @Qualifier("ImportantDatesRepository")
     private static ImportantDatesServiceImpl service = null;
-    private ImportantdatesRepository repository = null;
+    private ImportantdatesIRepository repository = null;
 
     private ImportantDatesServiceImpl(){
-        this.repository = ImportantDatesRepositoryImpl.getRepository();
+        this.repository = ImportantDatesIRepositoryImpl.getRepository();
     }
     public static ImportantDatesServiceImpl getService(){
         if(service == null) service = new ImportantDatesServiceImpl();

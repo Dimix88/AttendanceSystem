@@ -1,19 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.TimetableRepository;
-import com.dimitri.Repository.impl.TimetableRepositoryImpl;
+import com.dimitri.repository.TimetableIRepository;
+import com.dimitri.repository.impl.TimetableIRepositoryImpl;
 import com.dimitri.domain.Timetable;
 import com.dimitri.service.TimetableService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
-import java.sql.Time;
 import java.util.Set;
-
+@Service("ServiceImpl18")
 public class TimeTableServiceImpl implements TimetableService {
+    @Autowired
+    @Qualifier("TimetableRepository")
     private static TimeTableServiceImpl service = null;
-    private TimetableRepository repository = null;
+    private TimetableIRepository repository = null;
 
     private TimeTableServiceImpl(){
-        this.repository = TimetableRepositoryImpl.getRepository();
+        this.repository = TimetableIRepositoryImpl.getRepository();
     }
     public static TimeTableServiceImpl getService(){
         if(service == null) service = new TimeTableServiceImpl();

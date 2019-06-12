@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.TimetableRepository;
-import com.dimitri.Repository.impl.TimetableRepositoryImpl;
+import com.dimitri.repository.TimetableIRepository;
+import com.dimitri.repository.impl.TimetableIRepositoryImpl;
 import com.dimitri.domain.Timetable;
 import com.dimitri.factory.TimetableFactory;
 import org.junit.Assert;
@@ -11,16 +11,14 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class TimeTableServiceImplTest {
-    private TimetableRepository repository;
+    private TimetableIRepository repository;
     private Timetable c1;
     Set<Timetable> timetables = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = TimetableRepositoryImpl.getRepository();
+        this.repository = TimetableIRepositoryImpl.getRepository();
         c1 = TimetableFactory.getTimetable("09:00","4");
 
     }

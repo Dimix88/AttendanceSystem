@@ -1,18 +1,23 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.NoticesRepository;
-import com.dimitri.Repository.impl.NoticesRepositoryImpl;
+import com.dimitri.repository.NoticesIRepository;
+import com.dimitri.repository.impl.NoticesIRepositoryImpl;
 import com.dimitri.domain.Notices;
 import com.dimitri.service.NoticesService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service("ServiceImpl12")
 public class NoticesServiceImpl implements NoticesService {
+    @Autowired
+    @Qualifier("NoticeRepository")
     private static NoticesServiceImpl service = null;
-    private NoticesRepository repository = null;
+    private NoticesIRepository repository = null;
 
     private NoticesServiceImpl(){
-        this.repository = NoticesRepositoryImpl.getRepository();
+        this.repository = NoticesIRepositoryImpl.getRepository();
     }
     public static NoticesServiceImpl getService(){
         if(service == null) service = new NoticesServiceImpl();

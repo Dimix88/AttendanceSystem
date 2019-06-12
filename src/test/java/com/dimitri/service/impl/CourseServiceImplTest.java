@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.CourseRepository;
-import com.dimitri.Repository.impl.CourseRepositoryImpl;
+import com.dimitri.repository.CourseIRepository;
+import com.dimitri.repository.impl.CourseIRepositoryImpl;
 import com.dimitri.domain.Course;
 import com.dimitri.factory.CourseFactory;
 import org.junit.Assert;
@@ -11,18 +11,16 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class CourseServiceImplTest {
 
-    private CourseRepository repository;
+    private CourseIRepository repository;
     private Course c1;
     Set<Course> courses = new HashSet<>();
 
 
     @Before
     public void setUp() throws Exception {
-        this.repository = CourseRepositoryImpl.getRepository();
+        this.repository = CourseIRepositoryImpl.getRepository();
         c1 = CourseFactory.getCourse("Accounting");
 
     }

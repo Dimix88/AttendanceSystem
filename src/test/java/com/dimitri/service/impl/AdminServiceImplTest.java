@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.AdminRepository;
-import com.dimitri.Repository.impl.AdminRepositoryImpl;
+import com.dimitri.repository.AdminIRepository;
+import com.dimitri.repository.impl.AdminIRepositoryImpl;
 import com.dimitri.domain.Admin;
 import com.dimitri.factory.AdminFactory;
 import org.junit.Assert;
@@ -11,16 +11,14 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class AdminServiceImplTest {
-    private AdminRepository repository;
+    private AdminIRepository repository;
     private Admin c1;
     Set<Admin> admins = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = AdminRepositoryImpl.getRepository();
+        this.repository = AdminIRepositoryImpl.getRepository();
         c1 = AdminFactory.getAdmin("2");
 
     }

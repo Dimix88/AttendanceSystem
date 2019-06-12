@@ -1,18 +1,24 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.AdminRepository;
-import com.dimitri.Repository.impl.AdminRepositoryImpl;
+import com.dimitri.repository.AdminIRepository;
+import com.dimitri.repository.impl.AdminIRepositoryImpl;
 import com.dimitri.domain.Admin;
 import com.dimitri.service.AdminService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service("ServiceImpl1")
 public class AdminServiceImpl implements AdminService {
+    @Autowired
+    @Qualifier("AdminRepository")
     private static AdminServiceImpl service = null;
-    private AdminRepository repository = null;
+    private AdminIRepository repository = null;
 
     private AdminServiceImpl(){
-        this.repository = AdminRepositoryImpl.getRepository();
+        this.repository = AdminIRepositoryImpl.getRepository();
     }
     public static AdminServiceImpl getService(){
         if(service == null) service = new AdminServiceImpl();

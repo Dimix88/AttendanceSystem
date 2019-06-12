@@ -1,7 +1,7 @@
 package com.dimitri.service.impl;
 
-import com.dimitri.Repository.CleanerRepository;
-import com.dimitri.Repository.impl.CleanerRepositoryImpl;
+import com.dimitri.repository.CleanerIRepository;
+import com.dimitri.repository.impl.CleanerIRepositoryImpl;
 import com.dimitri.domain.Cleaner;
 import com.dimitri.factory.CleanerFactory;
 import org.junit.Assert;
@@ -11,16 +11,14 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class CleanerServiceImplTest {
-    private CleanerRepository repository;
+    private CleanerIRepository repository;
     private Cleaner c1;
     Set<Cleaner> cleaners = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = CleanerRepositoryImpl.getRepository();
+        this.repository = CleanerIRepositoryImpl.getRepository();
         c1 = CleanerFactory.getCleaner("Dimitri","Ferus","1000000","mm@gmail.com");
 
     }
