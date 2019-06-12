@@ -10,16 +10,22 @@ import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class SchoolServiceImplTest {
-
+    @Autowired
     private SchoolIRepository repository;
     private School c1;
     Set<School> schools = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = SchoolIRepositoryImpl.getRepository();
+
         c1 = SchoolFactory.getSchool("Helderberg");
 
     }

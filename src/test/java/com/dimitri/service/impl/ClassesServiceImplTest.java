@@ -10,18 +10,24 @@ import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class ClassesServiceImplTest {
 
 
-
+    @Autowired
     private ClassesIRepository repository;
     private Classes c1;
     Set<Classes> classes = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = ClassesIRepositoryImpl.getRepository();
+
         c1 = ClassesFactory.getClasses("111","200","10:00");
 
 

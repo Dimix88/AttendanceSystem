@@ -7,19 +7,24 @@ import com.dimitri.factory.StudentFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class StudentServiceImplTest {
-
+    @Autowired
     private StudentIRepository repository;
     private Student c1;
     Set<Student> students = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = StudentIRepositoryImpl.getRepository();
+
         c1 = StudentFactory.getStudent("Dimitri","Ferus","1000000","mm@gmail.com");
 
     }

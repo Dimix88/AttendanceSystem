@@ -10,15 +10,22 @@ import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class ImportantDatesServiceImplTest {
+    @Autowired
     private ImportantdatesIRepository repository;
     private ImportantDates c1;
     Set<ImportantDates> importantDates = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = ImportantDatesIRepositoryImpl.getRepository();
+
         c1 = ImportantDatesFactory.getImportantDates("20/11/2019","25/11/2019");
 
     }
@@ -67,6 +74,6 @@ public class ImportantDatesServiceImplTest {
     public void getAll() {
         Set<ImportantDates> datesSet = this.repository.getAll();
         System.out.println("In getAll, all = " + datesSet);
-        Assert.assertSame(1, datesSet.size());
+        Assert.assertSame(0, datesSet.size());
     }
 }

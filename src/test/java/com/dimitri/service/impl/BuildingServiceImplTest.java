@@ -10,9 +10,15 @@ import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class BuildingServiceImplTest {
-
+    @Autowired
     private BuildingIRepository repository;
     private Building c1;
     Set<Building> buildings = new HashSet<>();
@@ -20,7 +26,7 @@ public class BuildingServiceImplTest {
 
     @Before
     public void setUp() throws Exception {
-        this.repository = BuildingIRepositoryImpl.getRepository();
+
         c1 = BuildingFactory.getBuilding("A-Building","21 Street");
 
     }

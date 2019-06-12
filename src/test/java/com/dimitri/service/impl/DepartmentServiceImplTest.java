@@ -10,16 +10,22 @@ import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class DepartmentServiceImplTest {
-
+    @Autowired
     private DepartmentIRepository repository;
     private Department c1;
     Set<Department> departments = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = DepartmentIRepositoryImpl.getRepository();
+
         c1 = DepartmentFactory.getDepartment("Marketing","UWC");
 
     }

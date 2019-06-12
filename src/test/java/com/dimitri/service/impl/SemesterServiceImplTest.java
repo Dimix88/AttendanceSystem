@@ -10,16 +10,22 @@ import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class SemesterServiceImplTest {
-
+    @Autowired
     private SemesterIRepository repository;
     private Semester c1;
     Set<Semester> semesters = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = SemesterIRepositoryImpl.getRepository();
+
         c1 = SemesterFactory.getSemester("2019","1","15/02/2019","28/03/2019");
 
     }

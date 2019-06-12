@@ -10,15 +10,22 @@ import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class AdminServiceImplTest {
+    @Autowired
     private AdminIRepository repository;
     private Admin c1;
     Set<Admin> admins = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = AdminIRepositoryImpl.getRepository();
+
         c1 = AdminFactory.getAdmin("2");
 
     }
