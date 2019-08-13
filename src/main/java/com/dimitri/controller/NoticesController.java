@@ -11,36 +11,36 @@ import java.util.Set;
 @RestController
 @RequestMapping("/notices")
 public class NoticesController {
-    @Autowired
-    @Qualifier("ServiceImpl12")
 
+    @Autowired
+    @Qualifier("NoticeServiceImpl")
     private NoticesService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Notices create(Notices notices){
+    public Notices create(@RequestBody Notices notices){
         return service.create(notices);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Notices update(Notices notices){
+    public Notices update(@RequestBody Notices notices){
         return service.update(notices);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Notices read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Notices> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

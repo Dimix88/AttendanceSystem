@@ -12,35 +12,34 @@ import java.util.Set;
 public class   BuildingController {
 
     @Autowired
-    @Qualifier("ServiceImpl20")
-
+    @Qualifier("BuildingServiceImpl")
     private BuildingService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Building create(Building building){
+    public Building create(@RequestBody Building building){
         return service.create(building);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Building update(Building building){
+    public Building update(@RequestBody Building building){
         return service.update(building);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Building read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Building> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

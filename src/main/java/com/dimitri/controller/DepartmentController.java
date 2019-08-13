@@ -12,35 +12,34 @@ import java.util.Set;
 @RequestMapping("/department")
 public class DepartmentController {
     @Autowired
-    @Qualifier("ServiceImpl6")
-
+    @Qualifier("DepartmentServiceImpl")
     private DepartmentService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Department create(Department department){
+    public Department create(@RequestBody Department department){
         return service.create(department);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Department update(Department department){
+    public Department update(@RequestBody Department department){
         return service.update(department);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Department read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Department> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

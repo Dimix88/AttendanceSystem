@@ -9,11 +9,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-@Service("ServiceImpl")
+@Service("StudentServiceImpl")
 public class StudentServiceImpl implements StudentService {
     @Autowired
     @Qualifier("InMemory")
-    private StudentIRepository repository = null;
+    private StudentIRepository repository;
 
     @Override
     public Set<Student> getAll() {

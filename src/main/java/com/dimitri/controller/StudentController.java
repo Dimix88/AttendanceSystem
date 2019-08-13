@@ -1,5 +1,6 @@
 package com.dimitri.controller;
 
+import com.dimitri.service.impl.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
@@ -12,35 +13,34 @@ import java.util.Set;
 @RequestMapping("/student")
 public class StudentController {
     @Autowired
-    @Qualifier("ServiceImpl")
-
+    @Qualifier("StudentServiceImpl")
     private StudentService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Student create(Student student){
+    public Student create(@RequestBody Student student){
         return service.create(student);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Student update(Student student){
+    public Student update(@RequestBody Student student){
         return service.update(student);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Student read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/getAll/all")
     @ResponseBody
     public Set<Student> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

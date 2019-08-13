@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl9")
+@Service("DatesServiceImpl")
 public class ImportantDatesServiceImpl implements ImportantdatesService {
     @Autowired
     @Qualifier("ImportantDatesRepository")
-    private static ImportantDatesServiceImpl service = null;
     private ImportantdatesIRepository repository = null;
 
-    private ImportantDatesServiceImpl(){
-        this.repository = ImportantDatesIRepositoryImpl.getRepository();
-    }
-    public static ImportantDatesServiceImpl getService(){
-        if(service == null) service = new ImportantDatesServiceImpl();
-        return service;
-    }
     @Override
     public Set<ImportantDates> getAll() {
         return this.repository.getAll();

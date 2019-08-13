@@ -12,35 +12,34 @@ import java.util.Set;
 @RequestMapping("/cleaner")
 public class CleanerController {
     @Autowired
-    @Qualifier("ServiceImpl4")
-
+    @Qualifier("CleanerServiceImpl")
     private CleanerService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Cleaner create(Cleaner cleaner){
+    public Cleaner create(@RequestBody Cleaner cleaner){
         return service.create(cleaner);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Cleaner update(Cleaner cleaner){
+    public Cleaner update(@RequestBody Cleaner cleaner){
         return service.update(cleaner);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Cleaner read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Cleaner> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

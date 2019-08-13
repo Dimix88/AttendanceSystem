@@ -12,35 +12,35 @@ import java.util.Set;
 @RequestMapping("/security")
 public class SecurityController {
     @Autowired
-    @Qualifier("ServiceImpl15")
+    @Qualifier("SecurityServiceImpl")
 
     private SecurityService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Security create(Security security){
+    public Security create(@RequestBody Security security){
         return service.create(security);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Security update(Security security){
+    public Security update(@RequestBody Security security){
         return service.update(security);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Security read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Security> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

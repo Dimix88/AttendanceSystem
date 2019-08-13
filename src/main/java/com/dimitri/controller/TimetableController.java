@@ -12,35 +12,35 @@ import java.util.Set;
 @RequestMapping("/timetable")
 public class TimetableController {
     @Autowired
-    @Qualifier("ServiceImpl18")
+    @Qualifier("TimeServiceImpl")
 
     private TimetableService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Timetable create(Timetable timetable){
+    public Timetable create(@RequestBody Timetable timetable){
         return service.create(timetable);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Timetable update(Timetable timetable){
+    public Timetable update(@RequestBody Timetable timetable){
         return service.update(timetable);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Timetable read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Timetable> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

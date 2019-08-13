@@ -12,19 +12,18 @@ import java.util.Set;
 @RequestMapping("/address")
 public class AddressController {
     @Autowired
-    @Qualifier("ServiceImpl2")
-
+    @Qualifier("AddressServiceImpl")
     private AddressService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Address create(Address address){
+    public Address create(@RequestBody Address address){
         return service.create(address);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Address update(Address address){
+    public Address update(@RequestBody Address address){
         return service.update(address);
     }
 
@@ -34,13 +33,13 @@ public class AddressController {
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Address> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl3")
+@Service("ClassesServiceImpl")
 public class ClassesServiceImpl implements ClassesService {
     @Autowired
     @Qualifier("ClassesRepository")
-    private static ClassesServiceImpl service = null;
     private ClassesIRepository repository = null;
 
-    private ClassesServiceImpl(){
-        this.repository = ClassesIRepositoryImpl.getRepository();
-    }
-    public static ClassesServiceImpl getService(){
-        if(service==null) service = new ClassesServiceImpl();
-        return service;
-    }
     @Override
     public Set<Classes> getAll() {
         return this.repository.getAll();

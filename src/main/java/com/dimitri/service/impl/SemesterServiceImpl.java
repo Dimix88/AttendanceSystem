@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl16")
+@Service("SemesterServiceImpl")
 public class SemesterServiceImpl implements SemesterService {
     @Autowired
     @Qualifier("SemesterRepository")
-    private static SemesterServiceImpl service = null;
     private SemesterIRepository repository = null;
 
-    private SemesterServiceImpl(){
-        this.repository = SemesterIRepositoryImpl.getRepository();
-    }
-    public static SemesterServiceImpl getService(){
-        if(service == null) service = new SemesterServiceImpl();
-        return service;
-    }
     @Override
     public Set<Semester> getAll() {
         return this.repository.getAll();

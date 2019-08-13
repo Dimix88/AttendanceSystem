@@ -12,35 +12,35 @@ import java.util.Set;
 @RequestMapping("/semester")
 public class SemesterController {
     @Autowired
-    @Qualifier("ServiceImpl16")
+    @Qualifier("SemesterServiceImpl")
 
     private SemesterService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Semester create(Semester semester){
+    public Semester create(@RequestBody Semester semester){
         return service.create(semester);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Semester update(Semester semester){
+    public Semester update(@RequestBody Semester semester){
         return service.update(semester);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Semester read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Semester> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

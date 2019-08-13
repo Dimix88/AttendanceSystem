@@ -10,20 +10,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-@Service("ServiceImpl1")
+@Service("AdminServiceImpl")
 public class AdminServiceImpl implements AdminService {
     @Autowired
     @Qualifier("AdminRepository")
-    private static AdminServiceImpl service = null;
     private AdminIRepository repository = null;
 
-    private AdminServiceImpl(){
-        this.repository = AdminIRepositoryImpl.getRepository();
-    }
-    public static AdminServiceImpl getService(){
-        if(service == null) service = new AdminServiceImpl();
-        return service;
-    }
     @Override
     public Set<Admin> getAll() {
         return this.repository.getAll();

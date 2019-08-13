@@ -12,35 +12,34 @@ import java.util.Set;
 @RequestMapping("/room")
 public class RoomController {
     @Autowired
-    @Qualifier("ServiceImpl13")
-
+    @Qualifier("RoomServiceImpl")
     private RoomService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Room create(Room room){
+    public Room create(@RequestBody Room room){
         return service.create(room);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Room update(Room room){
+    public Room update(@RequestBody Room room){
         return service.update(room);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Room read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Room> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

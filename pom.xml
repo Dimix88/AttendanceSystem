@@ -47,6 +47,12 @@
       <version>2.1.4.RELEASE</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+    </dependency>
+
   </dependencies>
 
   <build>

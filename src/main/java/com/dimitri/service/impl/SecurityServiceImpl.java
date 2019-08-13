@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl15")
+@Service("SecurityServiceImpl")
 public class SecurityServiceImpl implements SecurityService {
     @Autowired
     @Qualifier("SecurityRepository")
-    private static SecurityServiceImpl service = null;
     private SecurityIRepository repository = null;
 
-    private SecurityServiceImpl(){
-        this.repository = SecurityIRepositoryImpl.getRepository();
-    }
-    public static SecurityServiceImpl getService(){
-        if(service == null) service = new SecurityServiceImpl();
-        return service;
-    }
     @Override
     public Set<Security> getAll() {
         return this.repository.getAll();

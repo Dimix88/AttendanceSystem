@@ -8,20 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import java.util.Set;
-@Service("ServiceImpl13")
+@Service("RoomServiceImpl")
 public class RoomServiceImpl implements RoomService {
     @Autowired
     @Qualifier("RoomRepository")
-    private static RoomServiceImpl service = null;
     private RoomIRepository repository = null;
 
-    private RoomServiceImpl(){
-        this.repository = RoomIRepositoryImpl.getRepository();
-    }
-    public static RoomServiceImpl getService(){
-        if(service == null) service = new RoomServiceImpl();
-        return service;
-    }
     @Override
     public Room create(Room room) {
         return this.repository.create(room);

@@ -6,12 +6,14 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class AttendanceApplication {
-    @Bean
-    public RestTemplate restTemplate(){
-        return new RestTemplate();
-    }
+
 
     public static void main(String [] args){
             SpringApplication.run(AttendanceApplication.class, args);
+    }
+
+    @Bean
+    public RestTemplate restTemplate(){
+        return new RestTemplate();
     }
 }

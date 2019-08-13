@@ -12,35 +12,34 @@ import java.util.Set;
 @RequestMapping("/admin")
 public class AdminController {
     @Autowired
-    @Qualifier("ServiceImpl1")
-
+    @Qualifier("AdminServiceImpl")
     private AdminService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Admin create(Admin admin){
+    public Admin create(@RequestBody Admin admin){
         return service.create(admin);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public Admin update(Admin admin){
+    public Admin update(@RequestBody Admin admin){
         return service.update(admin);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public Admin read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<Admin> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);

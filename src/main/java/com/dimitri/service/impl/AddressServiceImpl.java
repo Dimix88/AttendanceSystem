@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl2")
+@Service("AddressServiceImpl")
 public class AddressServiceImpl implements AddressService {
     @Autowired
     @Qualifier("AddressRepository")
-    private static AddressServiceImpl service = null;
     private AddressIRepository repository = null;
 
-    private AddressServiceImpl(){
-        this.repository = AddressIRepositoryImpl.getRepository();
-    }
-    public static AddressServiceImpl getService(){
-        if(service == null) service = new AddressServiceImpl();
-        return service;
-    }
     @Override
     public Set<Address> getAll() {
         return this.repository.getAll();

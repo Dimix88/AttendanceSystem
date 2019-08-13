@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl18")
+@Service("TimeServiceImpl")
 public class TimeTableServiceImpl implements TimetableService {
     @Autowired
     @Qualifier("TimetableRepository")
-    private static TimeTableServiceImpl service = null;
     private TimetableIRepository repository = null;
 
-    private TimeTableServiceImpl(){
-        this.repository = TimetableIRepositoryImpl.getRepository();
-    }
-    public static TimeTableServiceImpl getService(){
-        if(service == null) service = new TimeTableServiceImpl();
-        return service;
-    }
     @Override
     public Set<Timetable> getAll() {
         return this.repository.getAll();

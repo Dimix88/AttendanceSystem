@@ -12,8 +12,7 @@ import java.util.Set;
 @RequestMapping("/enroll")
 public class EnrollController {
     @Autowired
-    @Qualifier("ServiceImpl7")
-
+    @Qualifier("EnrollServiceImpl")
     private EnrollService service;
 
     @PostMapping("/create")

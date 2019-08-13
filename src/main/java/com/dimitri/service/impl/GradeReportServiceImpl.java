@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl8")
+@Service("GradeReportServiceImpl")
 public class GradeReportServiceImpl implements GradeReportService {
     @Autowired
     @Qualifier("GradeReportRepository")
-    private static GradeReportServiceImpl service = null;
     private GradeReportIRepository repository = null;
 
-    private GradeReportServiceImpl(){
-        this.repository = GradeReportIRepositoryImpl.getRepository();
-    }
-    public static GradeReportServiceImpl getService(){
-        if(service == null) service = new GradeReportServiceImpl();
-        return service;
-    }
     @Override
     public Set<GradeReport> getAll() {
         return this.repository.getAll();

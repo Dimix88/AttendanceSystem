@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl11")
+@Service("NameServiceImpl")
 public class NameServiceImpl implements NameService {
     @Autowired
     @Qualifier("NameRepository")
-    private static NameServiceImpl service = null;
     private NameIRepository repository = null;
 
-    private NameServiceImpl(){
-        this.repository = NameIRepositoryImpl.getRepository();
-    }
-    public static NameServiceImpl getService(){
-        if(service == null) service = new NameServiceImpl();
-        return service;
-    }
     @Override
     public Set<Name> getAll() {
         return this.repository.getAll();

@@ -10,20 +10,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-@Service("ServiceImpl20")
+@Service("BuildingServiceImpl")
 public class BuildingServiceImpl implements BuildingService {
         @Autowired
         @Qualifier("BuildingRepository")
-        private static BuildingServiceImpl service = null;
         private BuildingIRepository repository = null;
 
-        private BuildingServiceImpl(){
-            this.repository = BuildingIRepositoryImpl.getRepository();
-    }
-    public static BuildingServiceImpl getService(){
-            if(service == null) service = new BuildingServiceImpl();
-            return service;
-    }
     @Override
     public Set<Building> getAll() {
         return this.repository.getAll();

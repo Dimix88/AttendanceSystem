@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashSet;
 import java.util.Set;
 
-@Repository("BuildinRepository")
+@Repository("BuildingRepository")
 public class BuildingIRepositoryImpl implements BuildingIRepository {
     @Autowired
     private static BuildingIRepositoryImpl repository = null;

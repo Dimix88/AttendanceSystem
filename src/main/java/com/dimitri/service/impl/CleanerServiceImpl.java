@@ -9,20 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service("ServiceImpl4")
+@Service("CleanerServiceImpl")
 public class CleanerServiceImpl implements CleanerService {
     @Autowired
     @Qualifier("CleanerRepository")
-    private static CleanerServiceImpl service = null;
     private CleanerIRepository repository = null;
 
-    private CleanerServiceImpl(){
-        this.repository = CleanerIRepositoryImpl.getRepository();
-    }
-    public static CleanerServiceImpl getService(){
-        if(service == null) service = new CleanerServiceImpl();
-        return service;
-    }
     @Override
     public Set<Cleaner> getAll() {
         return this.repository.getAll();

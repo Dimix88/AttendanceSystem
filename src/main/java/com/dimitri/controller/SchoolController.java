@@ -12,35 +12,35 @@ import java.util.Set;
 @RequestMapping("/school")
 public class SchoolController {
     @Autowired
-    @Qualifier("ServiceImpl14")
+    @Qualifier("SchoolServiceImpl")
 
     private SchoolService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public School create(School school){
+    public School create(@RequestBody School school){
         return service.create(school);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public School update(School school){
+    public School update(@RequestBody School school){
         return service.update(school);
     }
 
-    @PostMapping("/read/{id}")
+    @GetMapping("/read/{id}")
     @ResponseBody
     public School read(@PathVariable String id){
         return service.read(id);
     }
 
-    @PostMapping("/read/all")
+    @GetMapping("/read/all")
     @ResponseBody
     public Set<School> getAll(){
         return service.getAll();
     }
 
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id){
         service.delete(id);
