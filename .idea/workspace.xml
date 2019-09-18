@@ -5,132 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f244758d-b429-4ebc-852a-b26554d4030f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/AttendanceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/AttendanceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/AddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/BuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/BuildingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/ClassesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/ClassesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/CleanerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/CleanerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/EnrollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/EnrollController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/GradeReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/GradeReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/ImportantDatesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/ImportantDatesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/LecturerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/LecturerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/NameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/NameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/NoticesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/NoticesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/SchoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/SchoolController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/SecurityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/SemesterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/SemesterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/SubjectsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/SubjectsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/TimetableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/controller/TimetableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/repository/impl/BuildingIRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/repository/impl/BuildingIRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/AddressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/BuildingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/BuildingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ClassesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ClassesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/CleanerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/CleanerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/EnrollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/EnrollServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/GradeReportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/GradeReportServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ImportantDatesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ImportantDatesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/LecturerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/LecturerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NameServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NoticesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NoticesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/RoomServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SchoolServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SchoolServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SecurityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SecurityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SemesterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SemesterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SubjectsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SubjectsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/TimeTableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/TimeTableServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AddressControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AddressControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AdminControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/BuildingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/BuildingControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ClassesControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ClassesControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CleanerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CleanerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/EnrollControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/EnrollControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ImportantDatesControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ImportantDatesControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/LecturerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/LecturerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NoticesControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NoticesControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/RoomControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/RoomControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SchoolControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SchoolControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SecurityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SecurityControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SemesterControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SemesterControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SubjectsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SubjectsControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/TimetableControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/TimetableControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/AttendanceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/AttendanceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/AddressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/AddressController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/BuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/BuildingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/ClassesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/ClassesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/CleanerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/CleanerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/DepartmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/DepartmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/EnrollController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/EnrollController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/GradeReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/GradeReportController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/ImportantDatesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/ImportantDatesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/LecturerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/LecturerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/NameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/NameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/NoticesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/NoticesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/RoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/SchoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/SchoolController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/SecurityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/SecurityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/SemesterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/SemesterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/SubjectsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/SubjectsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/controller/TimetableController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/controller/TimetableController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/repository/impl/BuildingIRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/repository/impl/BuildingIRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/AddressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/AddressServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/BuildingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/BuildingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/ClassesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/ClassesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/CleanerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/CleanerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/CourseServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/DepartmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/DepartmentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/EnrollServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/EnrollServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/GradeReportServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/GradeReportServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/ImportantDatesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/ImportantDatesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/LecturerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/LecturerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/NameServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/NameServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/NoticesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/NoticesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/RoomServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/RoomServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/SchoolServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/SchoolServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/SecurityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/SecurityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/SemesterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/SemesterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/SubjectsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/SubjectsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/TimeTableServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dimitri/service/impl/TimeTableServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/AddressControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/AddressControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/AdminControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/AdminControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/BuildingControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/BuildingControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/ClassesControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/ClassesControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/CleanerControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/CleanerControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/CourseControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/CourseControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/DepartmentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/DepartmentControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/EnrollControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/EnrollControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/GradeReportControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/GradeReportControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/ImportantDatesControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/ImportantDatesControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/LecturerControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/LecturerControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/NameControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/NameControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/NoticesControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/NoticesControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/RoomControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/RoomControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/SchoolControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/SchoolControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/SecurityControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/SecurityControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/SemesterControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/SemesterControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/StudentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/StudentControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/SubjectsControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/SubjectsControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/TimetableControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dimitri/controller/TimetableControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -147,14 +25,30 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="288">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,8 +59,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -176,10 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/controller/GradeReportController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/controller/ImportantDatesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/controller/LecturerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NoticesServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/NameServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/controller/NoticesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/controller/NameController.java" />
@@ -227,6 +117,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SemesterControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SubjectsControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/TimetableControllerTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java" />
       </list>
     </option>
   </component>
@@ -267,7 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,62 +208,6 @@
               <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -394,16 +232,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -414,7 +243,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,7 +257,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560117021355" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../payroll" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/AppDev/payroll" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -469,22 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TimetableControllerTest">
-    <configuration name="SchoolControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AttendanceSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dimitri.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dimitri.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.SchoolControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StudentControllerTest">
     <configuration name="SecurityControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AttendanceSystem" />
       <extension name="coverage">
@@ -510,6 +324,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dimitri.controller" />
       <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.SemesterControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AttendanceSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dimitri.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dimitri.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.StudentControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -547,11 +376,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentControllerTest" />
         <item itemvalue="JUnit.TimetableControllerTest" />
         <item itemvalue="JUnit.SubjectsControllerTest" />
         <item itemvalue="JUnit.SemesterControllerTest" />
         <item itemvalue="JUnit.SecurityControllerTest" />
-        <item itemvalue="JUnit.SchoolControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -618,14 +447,17 @@
       <workItem from="1565556214312" duration="709000" />
       <workItem from="1565632887067" duration="8609000" />
       <workItem from="1565692133452" duration="641000" />
-      <workItem from="1565727854248" duration="612000" />
+      <workItem from="1565727854248" duration="1068000" />
+      <workItem from="1566672324726" duration="236000" />
+      <workItem from="1568660455557" duration="631000" />
+      <workItem from="1568662231737" duration="1767000" />
+      <workItem from="1568746836632" duration="552000" />
+      <workItem from="1568748943043" duration="4736000" />
+      <workItem from="1568799180581" duration="737000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ImportantDatesControllerTest - 2019.07.29 at 18h 07m 34s.xml">
-      <configuration name="ImportantDatesControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LecturerControllerTest - 2019.07.29 at 18h 08m 25s.xml">
       <configuration name="LecturerControllerTest" configurationId="JUnit" />
     </history-entry>
@@ -653,14 +485,17 @@
     <history-entry file="TimetableControllerTest - 2019.07.29 at 18h 15m 51s.xml">
       <configuration name="TimetableControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentControllerTest - 2019.09.17 at 22h 40m 38s.xml">
+      <configuration name="StudentControllerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232110000" />
+    <option name="totallyTimeSpent" value="241225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.2980333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.3260212" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.3207262" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -781,12 +616,6 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java</url>
           <line>21</line>
           <properties />
@@ -802,27 +631,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SecurityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SemesterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/TimeTableServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/SubjectsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1131,16 +939,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/repository/impl/StudentIRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/StudentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="85">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1148,13 +949,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/repository/impl/StudentIRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="288">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
@@ -1210,11 +1046,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|AttendanceSystem</last-edited>
+          <last-edited>AttendanceSystem</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
