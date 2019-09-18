@@ -30,9 +30,10 @@ public class BuildingControllerTest {
     public void a_create() {
         Building building = BuildingFactory.getBuilding("B2","Cput");
 
-        ResponseEntity<Building> postResponse = restTemplate.postForEntity(baseURL + "/create", building, Building.class);
+        ResponseEntity<Building> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", building, Building.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -47,7 +48,7 @@ public class BuildingControllerTest {
 
     @Test
     public void c_read() {
-        Building building = restTemplate.getForObject(baseURL + "/building/1", Building.class);
+        Building building = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/building/1", Building.class);
         System.out.println(building.getBldgName());
         assertNotNull(building);
     }
@@ -57,9 +58,10 @@ public class BuildingControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
+        System.out.println(response.toString());
     }
 
     @Test

@@ -30,9 +30,10 @@ public class AdminControllerTest {
     public void a_create() {
         Admin admin = AdminFactory.getAdmin("2");
 
-        ResponseEntity<Admin> postResponse = restTemplate.postForEntity(baseURL + "/create", admin, Admin.class);
+        ResponseEntity<Admin> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", admin, Admin.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -47,7 +48,7 @@ public class AdminControllerTest {
 
     @Test
     public void c_read() {
-        Admin admin = restTemplate.getForObject(baseURL + "/admin/1", Admin.class);
+        Admin admin = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/admin/1", Admin.class);
         System.out.println(admin.getAdminLevel());
         assertNotNull(admin);
     }
@@ -57,9 +58,10 @@ public class AdminControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
+        System.out.println(response.toString());
     }
 
     @Test

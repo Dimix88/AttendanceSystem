@@ -28,9 +28,10 @@ public class NameControllerTest {
     public void a_create() {
         Name name = NameFactory.getName("Dimitri"," Ferus","Ferus");
 
-        ResponseEntity<Name> postResponse = restTemplate.postForEntity(baseURL + "/create", name, Name.class);
+        ResponseEntity<Name> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", name, Name.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -45,7 +46,7 @@ public class NameControllerTest {
 
     @Test
     public void c_read() {
-        Name name = restTemplate.getForObject(baseURL + "/name/1", Name.class);
+        Name name = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/name/1", Name.class);
         System.out.println(name.getFirstname());
         assertNotNull(name);
     }
@@ -55,9 +56,10 @@ public class NameControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
+        System.out.println(response.toString());
     }
 
     @Test

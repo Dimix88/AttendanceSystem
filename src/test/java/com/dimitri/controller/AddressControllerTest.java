@@ -30,7 +30,7 @@ public class AddressControllerTest {
     public void a_create() {
         Address address = AddressFactory.getAddress("MarksStreet"," PO Box 22","Cape Town","Western Cape");
 
-        ResponseEntity<Address> postResponse = restTemplate.postForEntity(baseURL + "/create", address, Address.class);
+        ResponseEntity<Address> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", address, Address.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
     }
@@ -47,7 +47,7 @@ public class AddressControllerTest {
 
     @Test
     public void c_read() {
-        Address address = restTemplate.getForObject(baseURL + "/address/", Address.class);
+        Address address = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/address/", Address.class);
         System.out.println(address.getStreetAddres());
         assertNotNull(address);
     }
@@ -57,7 +57,7 @@ public class AddressControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
     }

@@ -27,9 +27,11 @@ public class ClassesControllerTest {
     public void a_create() {
         Classes classes = ClassesFactory.getClasses("122"," 222","10.30");
 
-        ResponseEntity<Classes> postResponse = restTemplate.postForEntity(baseURL + "/create", classes, Classes.class);
+        ResponseEntity<Classes> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", classes, Classes.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -54,9 +56,11 @@ public class ClassesControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
+        System.out.println(response.toString());
+        System.out.println(response.toString());
     }
 
     @Test

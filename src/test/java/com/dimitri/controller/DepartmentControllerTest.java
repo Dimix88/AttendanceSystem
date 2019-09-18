@@ -30,6 +30,7 @@ public class DepartmentControllerTest {
         ResponseEntity<Department> postResponse = restTemplate.postForEntity(baseURL + "/create", department, Department.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
     }
 
     @Test

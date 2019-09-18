@@ -28,7 +28,7 @@ public class CleanerControllerTest {
     public void a_create() {
         Cleaner cleaner = CleanerFactory.getCleaner("Dimitri"," Ferus","111111","D@gmail.com");
 
-        ResponseEntity<Cleaner> postResponse = restTemplate.postForEntity(baseURL + "/create", cleaner, Cleaner.class);
+        ResponseEntity<Cleaner> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", cleaner, Cleaner.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
     }
@@ -45,7 +45,7 @@ public class CleanerControllerTest {
 
     @Test
     public void c_read() {
-        Cleaner cleaner = restTemplate.getForObject(baseURL + "/cleaner/1", Cleaner.class);
+        Cleaner cleaner = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/cleaner/1", Cleaner.class);
         System.out.println(cleaner.getCleanerName());
         assertNotNull(cleaner);
     }
@@ -55,7 +55,7 @@ public class CleanerControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
     }

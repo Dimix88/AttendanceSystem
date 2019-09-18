@@ -38,6 +38,9 @@ public class AttendanceSystemSecurity extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST,"AttendanceSystem/create**").hasRole(ADMIN_ROLE)
+                .antMatchers(HttpMethod.GET,"AttendanceSystem/getall").hasRole(USER_ROLE)
+                .antMatchers(HttpMethod.DELETE,"AttendanceSystem/delete**").hasRole(ADMIN_ROLE)
+                .antMatchers(HttpMethod.PUT,"AttendanceSystem/update**").hasRole(ADMIN_ROLE)
                 .and()
                 .csrf().disable()
                 .formLogin().disable();

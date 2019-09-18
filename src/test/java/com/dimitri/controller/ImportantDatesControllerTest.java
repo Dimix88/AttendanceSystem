@@ -28,9 +28,10 @@ public class ImportantDatesControllerTest {
     public void a_create() {
         ImportantDates importantDates = ImportantDatesFactory.getImportantDates("12/09/19","12/10/19");
 
-        ResponseEntity<ImportantDates> postResponse = restTemplate.postForEntity(baseURL + "/create", importantDates, ImportantDates.class);
+        ResponseEntity<ImportantDates> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", importantDates, ImportantDates.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -45,7 +46,7 @@ public class ImportantDatesControllerTest {
 
     @Test
     public void c_read() {
-        ImportantDates importantDates = restTemplate.getForObject(baseURL + "/importantDates/1", ImportantDates.class);
+        ImportantDates importantDates = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/importantDates/1", ImportantDates.class);
         System.out.println(importantDates.getsDate());
         assertNotNull(importantDates);
     }
@@ -55,9 +56,10 @@ public class ImportantDatesControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
+        System.out.println(response.toString());
     }
 
     @Test

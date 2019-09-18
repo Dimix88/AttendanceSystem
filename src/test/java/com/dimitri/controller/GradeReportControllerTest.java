@@ -28,9 +28,10 @@ public class GradeReportControllerTest {
     public void a_create() {
         GradeReport gradeReport = GradeReportFactory.getGradeReport("A"," 95");
 
-        ResponseEntity<GradeReport> postResponse = restTemplate.postForEntity(baseURL + "/create", gradeReport, GradeReport.class);
+        ResponseEntity<GradeReport> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", gradeReport, GradeReport.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -45,7 +46,7 @@ public class GradeReportControllerTest {
 
     @Test
     public void c_read() {
-        GradeReport gradeReport = restTemplate.getForObject(baseURL + "/gradeReport/1", GradeReport.class);
+        GradeReport gradeReport = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/gradeReport/1", GradeReport.class);
         System.out.println(gradeReport.getGradeLetter());
         assertNotNull(gradeReport);
     }
@@ -55,9 +56,10 @@ public class GradeReportControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
+        System.out.println(response.toString());
     }
 
     @Test

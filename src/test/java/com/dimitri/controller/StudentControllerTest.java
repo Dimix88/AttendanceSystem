@@ -28,8 +28,9 @@ public class StudentControllerTest {
     public void a_create() {
         Student student = StudentFactory.getStudent("Dimitri"," Ferus","111111","D@gmail.com");
 
-        ResponseEntity<Student> postResponse = restTemplate.postForEntity(baseURL + "/create", student, Student.class);
+        ResponseEntity<Student> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", student, Student.class);
         Assert.assertEquals(HttpStatus.OK,postResponse.getStatusCode());
+        System.out.print(postResponse.getBody());
         System.out.println(postResponse.toString());
 
     }
@@ -37,7 +38,7 @@ public class StudentControllerTest {
     @Test
     public void b_update() {
         int id = 1;
-        Student student = restTemplate.getForObject(baseURL + "/student/" + id, Student.class);
+                Student student = restTemplate.getForObject(baseURL + "/student/" + id, Student.class);
 
         restTemplate.put(baseURL + "/student/" + id, student);
         Student updatedStudent = restTemplate.getForObject(baseURL + "/Student/" + id, Student.class);
@@ -47,9 +48,10 @@ public class StudentControllerTest {
 
     @Test
     public void c_read() {
-        Student student = restTemplate.getForObject(baseURL + "/student/1", Student.class);
+        Student student = restTemplate.withBasicAuth("user","password").getForObject(baseURL + "/student/1", Student.class);
         System.out.println(student.getStudentName());
         Assert.assertNotNull(student);
+
     }
 
     @Test
@@ -57,9 +59,10 @@ public class StudentControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("user","password").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         Assert.assertNotNull(response.getBody());
+        System.out.print(response.getBody());
     }
 
 

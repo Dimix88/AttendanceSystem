@@ -28,9 +28,10 @@ public class CourseControllerTest {
     public void a_create() {
         Course course = CourseFactory.getCourse("Marketing");
 
-        ResponseEntity<Course> postResponse = restTemplate.postForEntity(baseURL + "/create", course, Course.class);
+        ResponseEntity<Course> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", course, Course.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -45,7 +46,7 @@ public class CourseControllerTest {
 
     @Test
     public void c_read() {
-        Course course = restTemplate.getForObject(baseURL + "/course/1", Course.class);
+        Course course = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/course/1", Course.class);
         System.out.println(course.getCourseName());
         assertNotNull(course);
     }
@@ -55,9 +56,10 @@ public class CourseControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
+        System.out.println(response.toString());
     }
 
     @Test

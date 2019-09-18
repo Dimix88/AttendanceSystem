@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f244758d-b429-4ebc-852a-b26554d4030f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AddressControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AddressControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/BuildingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/BuildingControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ClassesControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ClassesControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CleanerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CleanerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/EnrollControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/EnrollControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ImportantDatesControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ImportantDatesControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/LecturerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/LecturerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,29 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="200">
+              <caret line="30" column="90" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -97,19 +96,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/GradeReportServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/ImportantDatesServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/service/impl/LecturerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AddressControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AdminControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/BuildingControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ClassesControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CleanerControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/EnrollControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ImportantDatesControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/LecturerControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NoticesControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/RoomControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/SchoolControllerTest.java" />
@@ -119,8 +105,21 @@
         <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/TimetableControllerTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AddressControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/AdminControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/BuildingControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CleanerControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ClassesControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/EnrollControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/ImportantDatesControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/LecturerControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java" />
       </list>
     </option>
   </component>
@@ -203,6 +202,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dimitri" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AttendanceSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dimitri" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AttendanceSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -298,8 +306,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentControllerTest">
-    <configuration name="SecurityControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.NameControllerTest">
+    <configuration name="GradeReportControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AttendanceSystem" />
       <extension name="coverage">
         <pattern>
@@ -308,13 +316,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dimitri.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.SecurityControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.GradeReportControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemesterControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImportantDatesControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AttendanceSystem" />
       <extension name="coverage">
         <pattern>
@@ -323,7 +331,37 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dimitri.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.SemesterControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.ImportantDatesControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LecturerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AttendanceSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dimitri.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dimitri.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.LecturerControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NameControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AttendanceSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dimitri.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dimitri.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.NameControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -344,43 +382,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubjectsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AttendanceSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dimitri.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dimitri.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.SubjectsControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimetableControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AttendanceSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dimitri.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dimitri.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.dimitri.controller.TimetableControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NameControllerTest" />
+        <item itemvalue="JUnit.LecturerControllerTest" />
+        <item itemvalue="JUnit.ImportantDatesControllerTest" />
         <item itemvalue="JUnit.StudentControllerTest" />
-        <item itemvalue="JUnit.TimetableControllerTest" />
-        <item itemvalue="JUnit.SubjectsControllerTest" />
-        <item itemvalue="JUnit.SemesterControllerTest" />
-        <item itemvalue="JUnit.SecurityControllerTest" />
+        <item itemvalue="JUnit.GradeReportControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -453,49 +461,50 @@
       <workItem from="1568662231737" duration="1767000" />
       <workItem from="1568746836632" duration="552000" />
       <workItem from="1568748943043" duration="4736000" />
-      <workItem from="1568799180581" duration="737000" />
+      <workItem from="1568799180581" duration="4676000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LecturerControllerTest - 2019.07.29 at 18h 08m 25s.xml">
-      <configuration name="LecturerControllerTest" configurationId="JUnit" />
+    <history-entry file="AddressControllerTest - 2019.09.18 at 16h 33m 10s.xml">
+      <configuration name="AddressControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NameControllerTest - 2019.07.29 at 18h 09m 42s.xml">
-      <configuration name="NameControllerTest" configurationId="JUnit" />
+    <history-entry file="AdminControllerTest - 2019.09.18 at 16h 36m 38s.xml">
+      <configuration name="AdminControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NoticesControllerTest - 2019.07.29 at 18h 10m 40s.xml">
-      <configuration name="NoticesControllerTest" configurationId="JUnit" />
+    <history-entry file="BuildingControllerTest - 2019.09.18 at 16h 38m 21s.xml">
+      <configuration name="BuildingControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoomControllerTest - 2019.07.29 at 18h 11m 26s.xml">
-      <configuration name="RoomControllerTest" configurationId="JUnit" />
+    <history-entry file="ClassesControllerTest - 2019.09.18 at 16h 41m 47s.xml">
+      <configuration name="ClassesControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SchoolControllerTest - 2019.07.29 at 18h 12m 25s.xml">
-      <configuration name="SchoolControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SecurityControllerTest - 2019.07.29 at 18h 13m 15s.xml">
-      <configuration name="SecurityControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SemesterControllerTest - 2019.07.29 at 18h 14m 08s.xml">
-      <configuration name="SemesterControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SubjectsControllerTest - 2019.07.29 at 18h 14m 53s.xml">
-      <configuration name="SubjectsControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TimetableControllerTest - 2019.07.29 at 18h 15m 51s.xml">
-      <configuration name="TimetableControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentControllerTest - 2019.09.17 at 22h 40m 38s.xml">
+    <history-entry file="StudentControllerTest - 2019.09.18 at 16h 45m 47s.xml">
       <configuration name="StudentControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DepartmentControllerTest - 2019.09.18 at 16h 46m 29s.xml">
+      <configuration name="DepartmentControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GradeReportControllerTest - 2019.09.18 at 16h 49m 02s.xml">
+      <configuration name="GradeReportControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentControllerTest - 2019.09.18 at 16h 50m 20s.xml">
+      <configuration name="StudentControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImportantDatesControllerTest - 2019.09.18 at 16h 52m 09s.xml">
+      <configuration name="ImportantDatesControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LecturerControllerTest - 2019.09.18 at 16h 53m 43s.xml">
+      <configuration name="LecturerControllerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241225000" />
+    <option name="totallyTimeSpent" value="245164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.3260212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.3260212" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.3207262" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,7 +514,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.39443535" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.39443535" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -513,7 +522,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.39443535" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="bottom" id="Spring" order="13" />
@@ -610,22 +619,10 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java</url>
           <line>21</line>
           <properties />
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -747,90 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/AddressControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/AdminControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/BuildingControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/ClassesControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/CleanerControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/EnrollControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/ImportantDatesControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/LecturerControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -970,27 +883,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="217">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/AddressControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/AdminControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/BuildingControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/CleanerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/ClassesControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/CourseControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/DepartmentControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/EnrollControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/GradeReportControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/security/AttendanceSystemSecurity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+        <state relative-caret-position="285">
+          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dimitri/controller/StudentController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/ImportantDatesControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/LecturerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/StudentControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="30" column="90" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dimitri/controller/NameControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
         </state>
       </provider>
     </entry>
