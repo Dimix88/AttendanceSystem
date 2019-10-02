@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.NameService;
 import com.dimitri.domain.Name;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -13,7 +14,6 @@ import java.util.Set;
 public class NameController {
     @Autowired
     @Qualifier("NameServiceImpl")
-
     private NameService service;
 
     @PostMapping("/create")
@@ -36,7 +36,7 @@ public class NameController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Name> getAll(){
+    public List<Name> getAll(){
         return service.getAll();
     }
 

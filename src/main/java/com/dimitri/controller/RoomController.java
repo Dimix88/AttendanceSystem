@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.RoomService;
 import com.dimitri.domain.Room;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -35,7 +36,7 @@ public class RoomController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Room> getAll(){
+    public List<Room> getAll(){
         return service.getAll();
     }
 

@@ -2,8 +2,8 @@ package com.dimitri.service;
 
 import com.dimitri.domain.Department;
 
-import java.util.Set;
+import java.util.List;
 
 public interface DepartmentService extends IService<Department, String> {
-    Set<Department>getAll();
+    List<Department> getAll();
 }

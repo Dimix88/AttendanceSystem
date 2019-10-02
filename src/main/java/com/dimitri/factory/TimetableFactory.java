@@ -1,11 +1,11 @@
 package com.dimitri.factory;
 
-import com.dimitri.domain.Timetable;
+import com.dimitri.domain.CollegeTimetable;
 import com.dimitri.util.IdGenerator;
 
 public class TimetableFactory {
-    public static Timetable getTimetable(String times, String days){
-        return new Timetable.Builder().ttID(IdGenerator.generateId())
+    public static CollegeTimetable getTimetable(String times, String days){
+        return new CollegeTimetable.Builder().ttID(IdGenerator.generateId())
                 .time(times)
                 .day(days)
                 .build();

@@ -1,8 +1,11 @@
 package com.dimitri.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
 public class Security implements Comparable<Security.Builder> {
+    @Id
     private String securityId;
     private String securityName;
     private String securitySurname;

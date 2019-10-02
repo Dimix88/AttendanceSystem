@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.ImportantdatesIRepository;
 import com.dimitri.domain.ImportantDates;
@@ -57,7 +57,7 @@ public class ImportantDatesIRepositoryImplTest {
     @Test
     public void delete() {
         ImportantDates importantDates= this.repository.create(this.c1);
-        this.repository.delete(importantDates.getsDate());
+        this.repository.delete(importantDates.getImportantDatesCode());
         System.out.println(this.importantDates);
     }
 
@@ -78,4 +78,4 @@ public class ImportantDatesIRepositoryImplTest {
         System.out.println("In getAll, all = " + datesSet);
         Assert.assertSame(2, datesSet.size());
     }
-}
+}**/

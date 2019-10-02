@@ -2,8 +2,8 @@ package com.dimitri.service;
 
 import com.dimitri.domain.Notices;
 
-import java.util.Set;
+import java.util.List;
 
 public interface NoticesService extends IService<Notices,String> {
-    Set<Notices>getAll();
+    List<Notices> getAll();
 }

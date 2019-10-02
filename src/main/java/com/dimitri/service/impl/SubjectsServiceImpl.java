@@ -1,42 +1,51 @@
 package com.dimitri.service.impl;
 
+import com.dimitri.domain.CollegeSubjects;
 import com.dimitri.repository.SubjectsIRepository;
-import com.dimitri.repository.impl.SubjectsIRepositoryImpl;
-import com.dimitri.domain.Subjects;
+//import com.dimitri.repository.impl.SubjectsIRepositoryImpl;
 import com.dimitri.service.SubjectsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
+
 @Service("SubjectsServiceImpl")
 public class SubjectsServiceImpl implements SubjectsService {
+    public static SubjectsService subjectsService = null;
+
     @Autowired
-    @Qualifier("SubjectsRepository")
-    private SubjectsIRepository repository = null;
+    private SubjectsIRepository repository;
 
+    private SubjectsServiceImpl(){}
+
+    public static SubjectsService getSubjectsService(){
+        if (subjectsService==null)subjectsService = new SubjectsServiceImpl();
+        return subjectsService;
+    }
     @Override
-    public Set<Subjects> getAll() {
-        return this.repository.getAll();
+    public List<CollegeSubjects> getAll() {
+        return this.repository.findAll();
     }
 
     @Override
-    public Subjects create(Subjects subjects) {
-        return this.repository.create(subjects);
+    public CollegeSubjects create(CollegeSubjects collegeSubjects) {
+        return this.repository.save(collegeSubjects);
     }
 
     @Override
-    public Subjects update(Subjects subjects) {
-        return this.repository.update(subjects);
+    public CollegeSubjects update(CollegeSubjects collegeSubjects) {
+        return this.repository.save(collegeSubjects);
     }
 
     @Override
     public void delete(String s) {
-        this.repository.delete(s);
+        this.repository.deleteById(s);
     }
 
     @Override
-    public Subjects read(String s) {
-        return this.repository.read(s);
+    public CollegeSubjects read(String s) {
+        Optional<CollegeSubjects>optionalSubjects = this.repository.findById(s);
+        return optionalSubjects.orElse(null);
     }
 }

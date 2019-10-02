@@ -1,14 +1,16 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.EnrollIRepository;
-import com.dimitri.repository.impl.EnrollIRepositoryImpl;
+//import com.dimitri.repository.impl.EnrollIRepositoryImpl;
 import com.dimitri.domain.Enroll;
 import com.dimitri.factory.EnrollFactory;
+import com.dimitri.service.EnrollService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,69 +20,63 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class EnrollServiceImplTest {
-    @Autowired
+    private EnrollService enrollService;
     private EnrollIRepository repository;
     private Enroll c1;
-    Set<Enroll> enrolls = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-
+        this.enrollService = EnrollServiceImpl.getEnrollService();
         c1 = EnrollFactory.getEnroll("100","3000","19/06/2019","A");
-
+        enrollService.create(c1);
 
     }
 
-
     @Test
     public void create() {
-        Enroll enroll= this.repository.create(this.c1);
-        String studentId = "3000";
-        System.out.println("In create, created = " + enroll);
-        getAll();
-        Assert.assertEquals(studentId,enroll.getStudentId());
+        Enroll enroll= EnrollFactory.getEnroll("100","211","19/06/2019","A");
+        enrollService.create(enroll);
+        String studentId = "211";
+        Assert.assertEquals(enroll.getStudentId(),enrollService.read(enroll.getStudentId()).getStudentId());
         Assert.assertNotNull(enroll);
-        Assert.assertSame(enroll, this.c1);
+        Assert.assertEquals(studentId, enrollService.read(enroll.getStudentId()).getStudentId());
+        Assert.assertSame(enroll, enrollService.read(enroll.getStudentId()));
 
     }
 
     @Test
     public void update() {
-        Enroll enroll= this.repository.create(this.c1);
-        String studentId = "300";;
-        Enroll newStudent = new Enroll.Builder().copy(enroll).studentId(studentId).build();
-        this.repository.create(newStudent);
-        System.out.println("In update, Will update = " + newStudent);
-        Enroll updated = this.repository.update(newStudent);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertSame(newStudent.getStudentId(), updated.getStudentId());
+        String studentId = "3";;
+        Enroll newStudent = new Enroll.Builder().copy(c1).studentId(studentId).build();
+        this.enrollService.update(newStudent);
+        enrollService.update(newStudent);
+        Assert.assertEquals(newStudent,enrollService.read(c1.getStudentId()));
 
     }
 
     @Test
     public void delete() {
-        Enroll enroll= this.repository.create(this.c1);
-        this.repository.delete(enroll.getStudentId());
-        System.out.println(this.enrolls);
-
+        Enroll deleteEnroll= EnrollFactory.getEnroll("233","","","");
+        enrollService.create(deleteEnroll);
+        enrollService.delete(deleteEnroll.getStudentId());
+        Enroll result = enrollService.read(deleteEnroll.getStudentId());
+        Assert.assertFalse(enrollService.getAll().iterator().next().getCourseCode().contains("233"));
+        Assert.assertNull(result);
     }
 
     @Test
     public void read() {
-        Enroll enroll= this.repository.create(this.c1);
-        System.out.println("In read, studentId = "+enroll.getStudentId() );
-        Enroll read = this.repository.read(enroll.getStudentId());
-        System.out.println("In read, read = "+ read);
-        Assert.assertEquals("3000",repository.read(c1.getStudentId()).getStudentId());
+        Enroll read= this.enrollService.create(this.c1);
+        Assert.assertEquals(read, enrollService.read(read.getStudentId()));
+        Assert.assertEquals(read, enrollService.read(c1.getStudentId()));
 
     }
 
 
     @Test
     public void getAll() {
-        Enroll enroll= this.repository.create(this.c1);
-        Set<Enroll> enroller = this.repository.getAll();
+        List<Enroll> enroller = this.enrollService.getAll();
         System.out.println("In getAll, all = " + enroller);
-        Assert.assertSame(1, enroller.size());
+        Assert.assertSame(enroller.size(),enrollService.getAll().size());
     }
 }

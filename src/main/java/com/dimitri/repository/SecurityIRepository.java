@@ -2,9 +2,9 @@ package com.dimitri.repository;
 
 import com.dimitri.domain.Security;
 import com.dimitri.repository.IRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Set;
-
-public interface SecurityIRepository extends IRepository<Security, String> {
-    Set<Security>getAll();
+@Repository
+public interface SecurityIRepository extends JpaRepository<Security, String> {
 }

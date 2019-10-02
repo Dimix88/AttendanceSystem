@@ -1,14 +1,16 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.ImportantdatesIRepository;
-import com.dimitri.repository.impl.ImportantDatesIRepositoryImpl;
+//import com.dimitri.repository.impl.ImportantDatesIRepositoryImpl;
 import com.dimitri.domain.ImportantDates;
 import com.dimitri.factory.ImportantDatesFactory;
+import com.dimitri.service.ImportantdatesService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,62 +20,59 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class ImportantDatesServiceImplTest {
-    @Autowired
+    private ImportantdatesService importantdatesService;
     private ImportantdatesIRepository repository;
     private ImportantDates c1;
-    Set<ImportantDates> importantDates = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-
+        this.importantdatesService = ImportantDatesServiceImpl.getImportantdatesService();
         c1 = ImportantDatesFactory.getImportantDates("20/11/2019","25/11/2019");
-
+        this.importantdatesService.create(c1);
     }
 
     @Test
     public void create() {
-        ImportantDates importantDates= this.repository.create(this.c1);
-        String date = "20/11/2019";
-        System.out.println("In create, created = " + importantDates);
-        Assert.assertEquals(date,importantDates.getsDate());
+        ImportantDates importantDates= ImportantDatesFactory.getImportantDates("20/11/2013","25/11/2019");
+        this.importantdatesService.create(importantDates);
+        String date = "20/11/2013";
+        Assert.assertEquals(importantDates.getImportantDatesCode(),importantdatesService.read(importantDates.getImportantDatesCode()).getsDate());
         Assert.assertNotNull(importantDates);
-        Assert.assertSame(importantDates, this.c1);
+        Assert.assertEquals(date, importantdatesService.read(importantDates.getImportantDatesCode()).getsDate());
+        Assert.assertSame(importantDates, importantdatesService.read(importantDates.getImportantDatesCode()));
     }
 
     @Test
     public void update() {
-        ImportantDates importantDates= this.repository.create(this.c1);
         String newSDate = "133";
-        ImportantDates newDate = new ImportantDates.Builder().copy(importantDates).sDate(newSDate).build();
-        this.repository.create(newDate);
-        System.out.println("In update, Will update = " + newDate);
-        ImportantDates updated = this.repository.update(newDate);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertSame(newDate.getsDate(), updated.getsDate());
+        ImportantDates newDate = new ImportantDates.Builder().copy(c1).sDate(newSDate).build();
+        this.importantdatesService.update(newDate);
+        Assert.assertEquals(newSDate,importantdatesService.read(c1.getsDate()));
     }
 
     @Test
     public void delete() {
-        ImportantDates importantDates= this.repository.create(this.c1);
-        this.repository.delete(importantDates.getsDate());
-        System.out.println(this.importantDates);
+        ImportantDates deleteImportantDates= ImportantDatesFactory.getImportantDates("20/11/2016","25/11/2018");
+        importantdatesService.create(deleteImportantDates);
+        importantdatesService.delete(deleteImportantDates.getImportantDatesCode());
+        ImportantDates result = importantdatesService.read(deleteImportantDates.getImportantDatesCode());
+        Assert.assertFalse(importantdatesService.getAll().iterator().next().getsDate().contains("20/11/2016"));
+        Assert.assertNull(result);
     }
 
     @Test
     public void read() {
-        ImportantDates importantDates= this.repository.create(this.c1);
-        System.out.println("In read, courseId = "+ importantDates.getsDate());
-        ImportantDates read = this.repository.read(importantDates.getsDate());
-        System.out.println("In read, read = "+ read);
-        Assert.assertEquals(c1.getsDate(), this.repository.read(c1.getsDate()).getsDate());
+        ImportantDates read = this.importantdatesService.create(this.c1);
+        Assert.assertEquals(read, importantdatesService.read(read.getImportantDatesCode()));
+        Assert.assertEquals(read, importantdatesService.read(c1.getImportantDatesCode()));
 
     }
 
 
     @Test
     public void getAll() {
-        Set<ImportantDates> datesSet = this.repository.getAll();
+        List<ImportantDates> datesSet = this.importantdatesService.getAll();
         System.out.println("In getAll, all = " + datesSet);
-        Assert.assertSame(0, datesSet.size());
+        Assert.assertSame(datesSet.size(),importantdatesService.getAll().size());
     }
 }

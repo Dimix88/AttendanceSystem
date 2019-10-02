@@ -2,8 +2,8 @@ package com.dimitri.service;
 
 import com.dimitri.domain.Cleaner;
 
-import java.util.Set;
+import java.util.List;
 
 public interface CleanerService extends IService<Cleaner,String> {
-    Set<Cleaner>getAll();
+    List<Cleaner> getAll();
 }

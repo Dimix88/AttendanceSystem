@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.StudentService;
 import com.dimitri.domain.Student;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -36,7 +37,7 @@ public class StudentController {
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Student> getAll(){
+    public List<Student> getAll(){
         return service.getAll();
     }
 

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.SecurityService;
 import com.dimitri.domain.Security;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -13,7 +14,6 @@ import java.util.Set;
 public class SecurityController {
     @Autowired
     @Qualifier("SecurityServiceImpl")
-
     private SecurityService service;
 
     @PostMapping("/create")
@@ -36,7 +36,7 @@ public class SecurityController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Security> getAll(){
+    public List<Security> getAll(){
         return service.getAll();
     }
 

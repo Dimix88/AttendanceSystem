@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.domain.School;
 import com.dimitri.service.SchoolService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -13,7 +14,6 @@ import java.util.Set;
 public class SchoolController {
     @Autowired
     @Qualifier("SchoolServiceImpl")
-
     private SchoolService service;
 
     @PostMapping("/create")
@@ -36,7 +36,7 @@ public class SchoolController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<School> getAll(){
+    public List<School> getAll(){
         return service.getAll();
     }
 

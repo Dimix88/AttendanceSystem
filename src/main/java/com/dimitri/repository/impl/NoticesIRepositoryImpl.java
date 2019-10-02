@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.NoticesIRepository;
 import com.dimitri.domain.Notices;
@@ -61,3 +61,4 @@ public class NoticesIRepositoryImpl implements NoticesIRepository {
         return this.notices;
     }
 }
+**/

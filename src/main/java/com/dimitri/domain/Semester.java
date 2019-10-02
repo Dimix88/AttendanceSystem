@@ -1,13 +1,16 @@
 package com.dimitri.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
 public class Semester implements Comparable<Semester> {
-    String semesterCode;
-    String semesterYear;
-    String semesterTerm;
-    String semesterStartDate;
-    String semesterEndDate;
+    @Id
+    private String semesterCode;
+    private String semesterYear;
+    private String semesterTerm;
+    private String semesterStartDate;
+    private String semesterEndDate;
 
     public Semester(){}
 

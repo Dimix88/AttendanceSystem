@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.RoomIRepository;
 import com.dimitri.domain.Room;
@@ -61,3 +61,4 @@ public class RoomIRepositoryImpl implements RoomIRepository {
         return this.rooms;
     }
 }
+**/

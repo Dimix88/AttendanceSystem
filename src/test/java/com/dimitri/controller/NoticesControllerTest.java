@@ -28,9 +28,10 @@ public class NoticesControllerTest {
     public void a_create() {
         Notices notices = NoticesFactory.getNotices("Sleep");
 
-        ResponseEntity<Notices> postResponse = restTemplate.postForEntity(baseURL + "/create", notices, Notices.class);
+        ResponseEntity<Notices> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", notices, Notices.class);
         assertNotNull(postResponse);
         assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -45,7 +46,7 @@ public class NoticesControllerTest {
 
     @Test
     public void c_read() {
-        Notices notices = restTemplate.getForObject(baseURL + "/notices/1", Notices.class);
+        Notices notices = restTemplate.withBasicAuth("admin","admin").getForObject(baseURL + "/notices/1", Notices.class);
         System.out.println(notices.getNotice());
         assertNotNull(notices);
     }
@@ -55,9 +56,10 @@ public class NoticesControllerTest {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-        ResponseEntity<String> response = restTemplate.exchange(baseURL + "/getAll/all",
+        ResponseEntity<String> response = restTemplate.withBasicAuth("admin","admin").exchange(baseURL + "/getAll/all",
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
+        System.out.println(response.toString());
     }
 
     @Test

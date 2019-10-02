@@ -1,7 +1,7 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.SubjectsIRepository;
-import com.dimitri.domain.Subjects;
+import com.dimitri.domain.CollegeSubjects;
 import com.dimitri.factory.SubjectsFactory;
 import org.junit.Assert;
 import org.junit.Before;
@@ -22,8 +22,8 @@ import java.util.Set;
 public class SubjectsIRepositoryImplTest {
     @Autowired
     private SubjectsIRepository repository;
-    private Subjects c1;
-    Set<Subjects> subjects = new HashSet<>();
+    private CollegeSubjects c1;
+    Set<CollegeSubjects> subjects = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
@@ -34,7 +34,7 @@ public class SubjectsIRepositoryImplTest {
 
     @Test
     public void create() {
-        Subjects subjects= this.repository.create(this.c1);
+        CollegeSubjects subjects= this.repository.create(this.c1);
         String name = "Marketing";
         System.out.println("In create, created = " + subjects);
         Assert.assertEquals(name,subjects.getSubName());
@@ -44,28 +44,28 @@ public class SubjectsIRepositoryImplTest {
 
     @Test
     public void update() {
-        Subjects subjects= this.repository.create(this.c1);
+        CollegeSubjects subjects= this.repository.create(this.c1);
         String newSubjectCode = "133";
-        Subjects newSubject = new Subjects.Builder().copy(subjects).subjectCode(newSubjectCode).build();
+        CollegeSubjects newSubject = new CollegeSubjects.Builder().copy(subjects).subjectCode(newSubjectCode).build();
         this.repository.create(newSubject);
         System.out.println("In update, Will update = " + newSubject);
-        Subjects updated = this.repository.update(newSubject);
+        CollegeSubjects updated = this.repository.update(newSubject);
         System.out.println("In update, updated = " + updated);
         Assert.assertSame(newSubject.getSubjectCode(), updated.getSubjectCode());
     }
 
     @Test
     public void delete() {
-        Subjects subjects= this.repository.create(this.c1);
+        CollegeSubjects subjects= this.repository.create(this.c1);
         this.repository.delete(subjects.getSubjectCode());
         System.out.println(this.subjects);
     }
 
     @Test
     public void read() {
-        Subjects subjects= this.repository.create(this.c1);
+        CollegeSubjects subjects= this.repository.create(this.c1);
         System.out.println("In read, courseId = "+ subjects.getSubjectCode());
-        Subjects read = this.repository.read(subjects.getSubjectCode());
+        CollegeSubjects read = this.repository.read(subjects.getSubjectCode());
         System.out.println("In read, read = "+ read);
         Assert.assertEquals(c1.getSubjectCode(), this.repository.read(c1.getSubjectCode()).getSubjectCode());
 
@@ -74,8 +74,8 @@ public class SubjectsIRepositoryImplTest {
 
     @Test
     public void getAll() {
-        Set<Subjects> subjectsSet = this.repository.getAll();
+        Set<CollegeSubjects> subjectsSet = this.repository.getAll();
         System.out.println("In getAll, all = " + subjectsSet);
         Assert.assertSame(4, subjectsSet.size());
     }
-}
+}**/

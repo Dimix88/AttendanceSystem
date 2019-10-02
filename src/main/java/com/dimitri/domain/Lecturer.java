@@ -1,9 +1,11 @@
 package com.dimitri.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
 public class Lecturer implements Comparable<Lecturer> {
-
+    @Id
     private String lecId;
     private String firstName;
     private String surname;

@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/***package com.dimitri.repository.impl;
 
 import com.dimitri.repository.SecurityIRepository;
 import com.dimitri.domain.Security;
@@ -78,4 +78,4 @@ public class SecurityIRepositoryImplTest {
         System.out.println("In getAll, all = " + securitiesSet);
         Assert.assertSame(4, securitiesSet.size());
     }
-}
+}**/

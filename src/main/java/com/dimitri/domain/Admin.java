@@ -1,8 +1,13 @@
 package com.dimitri.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
-
+@Entity
+@Table(name = "Admins")
 public class Admin implements Comparable<Admin>{
+    @Id
     private String adminID;
     private String adminLevel;
 

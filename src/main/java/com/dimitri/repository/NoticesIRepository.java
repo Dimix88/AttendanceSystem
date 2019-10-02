@@ -2,9 +2,9 @@ package com.dimitri.repository;
 
 import com.dimitri.domain.Notices;
 import com.dimitri.repository.IRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Set;
-
-public interface NoticesIRepository extends IRepository<Notices,String> {
-    Set<Notices>getAll();
+@Repository
+public interface NoticesIRepository extends JpaRepository<Notices,String> {
 }

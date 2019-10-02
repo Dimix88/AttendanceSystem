@@ -38,7 +38,7 @@ public class StudentControllerTest {
     @Test
     public void b_update() {
         int id = 1;
-                Student student = restTemplate.getForObject(baseURL + "/student/" + id, Student.class);
+        Student student = restTemplate.getForObject(baseURL + "/student/" + id, Student.class);
 
         restTemplate.put(baseURL + "/student/" + id, student);
         Student updatedStudent = restTemplate.getForObject(baseURL + "/Student/" + id, Student.class);

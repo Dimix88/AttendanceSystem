@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.CourseService;
 import com.dimitri.domain.Course;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -35,7 +36,7 @@ public class CourseController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Course> getAll(){
+    public List<Course> getAll(){
         return service.getAll();
     }
 

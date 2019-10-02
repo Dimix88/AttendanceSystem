@@ -1,9 +1,9 @@
 package com.dimitri.service;
 
-import com.dimitri.domain.Subjects;
+import com.dimitri.domain.CollegeSubjects;
 
-import java.util.Set;
+import java.util.List;
 
-public interface SubjectsService extends IService<Subjects, String> {
-    Set<Subjects>getAll();
+public interface SubjectsService extends IService<CollegeSubjects, String> {
+    List<CollegeSubjects> getAll();
 }

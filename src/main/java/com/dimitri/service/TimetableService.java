@@ -1,9 +1,9 @@
 package com.dimitri.service;
 
-import com.dimitri.domain.Timetable;
+import com.dimitri.domain.CollegeTimetable;
 
-import java.util.Set;
+import java.util.List;
 
-public interface TimetableService extends IService<Timetable, String> {
-    Set<Timetable>getAll();
+public interface TimetableService extends IService<CollegeTimetable, String> {
+    List<CollegeTimetable> getAll();
 }

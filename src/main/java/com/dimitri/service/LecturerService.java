@@ -2,8 +2,8 @@ package com.dimitri.service;
 
 import com.dimitri.domain.Lecturer;
 
-import java.util.Set;
+import java.util.List;
 
 public interface LecturerService extends IService<Lecturer, String> {
-    Set<Lecturer>getAll();
+    List<Lecturer> getAll();
 }

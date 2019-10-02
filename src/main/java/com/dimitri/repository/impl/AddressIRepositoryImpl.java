@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.AddressIRepository;
 import com.dimitri.domain.Address;
@@ -19,9 +19,9 @@ public class AddressIRepositoryImpl implements AddressIRepository {
         this.addresses = new HashSet<>();
     }
 
-    private Address findAddress(String street){
+    private Address findAddress(String addressCode ){
         for (Address classes2: this.addresses){
-            if (classes2.getStreetAddres().equals(street))
+            if (classes2.getStreetAddres().equals(addressCode))
                 return classes2;
         }
         return null;    }
@@ -37,7 +37,7 @@ public class AddressIRepositoryImpl implements AddressIRepository {
 
     @Override
     public Address update(Address address) {
-        Address toDelete = findAddress(address.getStreetAddres());
+        Address toDelete = findAddress(address.getAddressCode());
         if(toDelete != null) {
             this.addresses.remove(toDelete);
             return create(address);
@@ -46,8 +46,8 @@ public class AddressIRepositoryImpl implements AddressIRepository {
     }
 
     @Override
-    public void delete(String street) {
-        Address class1 = findAddress(street);
+    public void delete(String addressCode) {
+        Address class1 = findAddress(addressCode);
         if(class1 != null){
             this.addresses.remove(class1);
         }    }
@@ -60,3 +60,4 @@ public class AddressIRepositoryImpl implements AddressIRepository {
         return this.addresses;
     }
 }
+**/

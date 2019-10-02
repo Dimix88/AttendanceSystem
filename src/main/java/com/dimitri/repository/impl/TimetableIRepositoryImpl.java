@@ -1,7 +1,7 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.TimetableIRepository;
-import com.dimitri.domain.Timetable;
+import com.dimitri.domain.CollegeTimetable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import java.util.stream.Collectors;
@@ -14,14 +14,14 @@ import java.util.Set;
 public class TimetableIRepositoryImpl implements TimetableIRepository {
     @Autowired
     private static TimetableIRepositoryImpl repository = null;
-    private Set<Timetable> timetables;
+    private Set<CollegeTimetable> timetables;
 
     private TimetableIRepositoryImpl(){
         this.timetables = new HashSet<>();
     }
 
-    private Timetable findTimetable(String ttID){
-        for (Timetable classes2: this.timetables){
+    private CollegeTimetable findTimetable(String ttID){
+        for (CollegeTimetable classes2: this.timetables){
             if (classes2.getTtID().equals(ttID))
                 return classes2;
         }
@@ -31,14 +31,14 @@ public class TimetableIRepositoryImpl implements TimetableIRepository {
         return repository;
     }
     @Override
-    public Timetable create(Timetable timetable) {
+    public CollegeTimetable create(CollegeTimetable timetable) {
         this.timetables.add(timetable);
         return timetable;
     }
 
     @Override
-    public Timetable update(Timetable timetable) {
-        Timetable toDelete = findTimetable(timetable.getTtID());
+    public CollegeTimetable update(CollegeTimetable timetable) {
+        CollegeTimetable toDelete = findTimetable(timetable.getTtID());
         if(toDelete != null) {
             this.timetables.remove(toDelete);
             return create(timetable);
@@ -48,16 +48,17 @@ public class TimetableIRepositoryImpl implements TimetableIRepository {
 
     @Override
     public void delete(String ttID) {
-        Timetable class1 = findTimetable(ttID);
+        CollegeTimetable class1 = findTimetable(ttID);
         if(class1 != null){
             this.timetables.remove(class1);
         }    }
 
     @Override
-    public Timetable read(String ttID) {
+    public CollegeTimetable read(String ttID) {
         return findTimetable(ttID);
     }
-    public Set<Timetable> getAll(){
+    public Set<CollegeTimetable> getAll(){
         return this.timetables;
     }
 }
+**/

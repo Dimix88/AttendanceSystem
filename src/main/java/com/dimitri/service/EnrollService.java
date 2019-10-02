@@ -1,10 +1,9 @@
 package com.dimitri.service;
 
 import com.dimitri.domain.Enroll;
-import com.dimitri.service.IService;
 
-import java.util.Set;
+import java.util.List;
 
 public interface EnrollService extends IService<Enroll,String> {
-    Set<Enroll>getAll();
+    List<Enroll> getAll();
 }

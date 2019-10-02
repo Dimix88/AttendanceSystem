@@ -1,8 +1,11 @@
 package com.dimitri.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
 public class Notices implements Comparable<Notices> {
+    @Id
     private String noticeID;
     private String notice;
 

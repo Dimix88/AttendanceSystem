@@ -1,44 +1,52 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.BuildingIRepository;
-import com.dimitri.repository.impl.BuildingIRepositoryImpl;
+//import com.dimitri.repository.impl.BuildingIRepositoryImpl;
 import com.dimitri.domain.Building;
 import com.dimitri.service.BuildingService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("BuildingServiceImpl")
 public class BuildingServiceImpl implements BuildingService {
-        @Autowired
-        @Qualifier("BuildingRepository")
-        private BuildingIRepository repository = null;
+    public static BuildingService buildingService = null;
 
+    @Autowired
+    private BuildingIRepository repository;
+
+    private BuildingServiceImpl(){}
+
+    public static BuildingService getBuildingService(){
+        if(buildingService==null)buildingService = new BuildingServiceImpl();
+        return buildingService;
+    }
     @Override
-    public Set<Building> getAll() {
-        return this.repository.getAll();
+    public List<Building> getAll() {
+        return this.repository.findAll();
     }
 
     @Override
     public Building create(Building building) {
-        return this.repository.create(building);
+        return this.repository.save(building);
     }
 
     @Override
     public Building update(Building building) {
-        return this.repository.update(building);
+        return this.repository.save(building);
     }
 
     @Override
     public void delete(String s) {
-            this.repository.delete(s);
+            this.repository.deleteById(s);
 
     }
 
     @Override
     public Building read(String s) {
-        return this.repository.read(s);
+        Optional<Building>optionalBuilding = this.repository.findById(s);
+        return optionalBuilding.orElse(null);
     }
 }

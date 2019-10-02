@@ -1,14 +1,16 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.NameIRepository;
-import com.dimitri.repository.impl.NameIRepositoryImpl;
+//import com.dimitri.repository.impl.NameIRepositoryImpl;
 import com.dimitri.domain.Name;
 import com.dimitri.factory.NameFactory;
+import com.dimitri.service.NameService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,62 +20,59 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class NameServiceImplTest {
-    @Autowired
+    private NameService nameService;
     private NameIRepository repository;
     private Name c1;
-    Set<Name> names = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-
+        this.nameService = NameServiceImpl.getNameService();
         c1 = NameFactory.getName("Dimitri","John","Bells");
-
+        this.nameService.create(c1);
     }
 
     @Test
     public void create() {
-        Name name= this.repository.create(this.c1);
-        String fName = "Dimitri";
-        System.out.println("In create, created = " + name);
-        Assert.assertEquals(fName,name.getFirstname());
+        Name name = NameFactory.getName("John","Mark","Bells");
+        this.nameService.create(name);
+        String fName = "John";
+        Assert.assertEquals(name.getFirstname(),nameService.read(name.getNameCode()).getFirstname());
         Assert.assertNotNull(name);
-        Assert.assertSame(name, this.c1);
+        Assert.assertEquals(fName, nameService.read(name.getNameCode()).getFirstname());
+        Assert.assertSame(name, nameService.read(name.getNameCode()));
     }
 
     @Test
     public void update() {
-        Name name= this.repository.create(this.c1);
         String changeName = "Jack";
-        Name newName = new Name.Builder().copy(name).firstName(changeName).build();
-        this.repository.create(newName);
-        System.out.println("In update, Will update = " + newName);
-        Name updated = this.repository.update(newName);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertSame(newName.getFirstname(), updated.getFirstname());
+        Name newName = new Name.Builder().copy(c1).firstName(changeName).build();
+        this.nameService.update(newName);
+        Assert.assertEquals(newName,nameService.read(c1.getNameCode()));
     }
 
     @Test
     public void delete() {
-        Name name= this.repository.create(this.c1);
-        this.repository.delete(name.getFirstname());
-        System.out.println(this.names);
+        Name deleteName= NameFactory.getName("Shane","","Hart");
+        nameService.create(deleteName);
+        nameService.delete(deleteName.getNameCode());
+        Name result = nameService.read(deleteName.getNameCode());
+        Assert.assertFalse(nameService.getAll().iterator().next().getFirstname().contains("Shane"));
+        Assert.assertNull(result);
     }
 
     @Test
     public void read() {
-        Name name= this.repository.create(this.c1);;
-        System.out.println("In read, courseId = "+ name.getFirstname());
-        Name read = this.repository.read(name.getFirstname());
-        System.out.println("In read, read = "+ read);
-        Assert.assertEquals(c1.getFirstname(), this.repository.read(c1.getFirstname()).getFirstname());
+        Name read= this.nameService.create(this.c1);;
+        Assert.assertEquals(read, nameService.read(read.getNameCode()));
+        Assert.assertEquals(read, nameService.read(c1.getNameCode()));
 
     }
 
 
     @Test
     public void getAll() {
-        Set<Name> nameSet = this.repository.getAll();
+        List<Name> nameSet = this.nameService.getAll();
         System.out.println("In getAll, all = " + nameSet);
-        Assert.assertSame(1, nameSet.size());
+        Assert.assertSame(nameSet.size(),nameService.getAll().size());
     }
 }

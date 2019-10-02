@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.domain.Department;
 import com.dimitri.service.DepartmentService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -35,7 +36,7 @@ public class DepartmentController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Department> getAll(){
+    public List<Department> getAll(){
         return service.getAll();
     }
 

@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.NameIRepository;
 import com.dimitri.domain.Name;
@@ -20,9 +20,9 @@ public class NameIRepositoryImpl implements NameIRepository {
         this.names = new HashSet<>();
     }
 
-    private Name findName(String firtName){
+    private Name findName(String nameCode){
         for (Name classes2: this.names){
-            if (classes2.getFirstname().equals(firtName))
+            if (classes2.getFirstname().equals(nameCode))
                 return classes2;
         }
         return null;    }
@@ -38,7 +38,7 @@ public class NameIRepositoryImpl implements NameIRepository {
 
     @Override
     public Name update(Name name) {
-        Name toDelete = findName(name.getFirstname());
+        Name toDelete = findName(name.getNameCode());
         if(toDelete != null) {
             this.names.remove(toDelete);
             return create(name);
@@ -47,8 +47,8 @@ public class NameIRepositoryImpl implements NameIRepository {
     }
 
     @Override
-    public void delete(String firstName) {
-        Name class1 = findName(firstName);
+    public void delete(String nameCode) {
+        Name class1 = findName(nameCode);
         if(class1 != null){
             this.names.remove(class1);
         }    }
@@ -61,3 +61,4 @@ public class NameIRepositoryImpl implements NameIRepository {
         return this.names;
     }
 }
+**/

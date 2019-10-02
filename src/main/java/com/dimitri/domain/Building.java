@@ -1,11 +1,14 @@
 package com.dimitri.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
 public class Building implements Comparable<Building> {
-    String bldgCode;
-    String bldgName;
-    String bldgLocation;
+    @Id
+    private String bldgCode;
+    private String bldgName;
+    private String bldgLocation;
 
     public Building(){}
 

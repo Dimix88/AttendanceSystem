@@ -1,42 +1,51 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.ClassesIRepository;
-import com.dimitri.repository.impl.ClassesIRepositoryImpl;
+//import com.dimitri.repository.impl.ClassesIRepositoryImpl;
 import com.dimitri.domain.Classes;
 import com.dimitri.service.ClassesService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
+
 @Service("ClassesServiceImpl")
 public class ClassesServiceImpl implements ClassesService {
-    @Autowired
-    @Qualifier("ClassesRepository")
-    private ClassesIRepository repository = null;
+    public static ClassesService classesService = null;
 
+    @Autowired
+    private ClassesIRepository repository;
+
+    private ClassesServiceImpl(){}
+
+    public static ClassesService getClassesService(){
+        if(classesService==null)classesService = new ClassesServiceImpl();
+        return classesService;
+    }
     @Override
-    public Set<Classes> getAll() {
-        return this.repository.getAll();
+    public List<Classes> getAll() {
+        return this.repository.findAll();
     }
 
     @Override
     public Classes create(Classes classes) {
-        return this.repository.create(classes);
+        return this.repository.save(classes);
     }
 
     @Override
     public Classes update(Classes classes) {
-        return this.repository.update(classes);
+        return this.repository.save(classes);
     }
 
     @Override
     public void delete(String s) {
-        this.repository.delete(s);
+        this.repository.deleteById(s);
     }
 
     @Override
     public Classes read(String s) {
-        return this.repository.read(s);
+        Optional<Classes>optionalClasses = this.repository.findById(s);
+        return optionalClasses.orElse(null);
     }
 }

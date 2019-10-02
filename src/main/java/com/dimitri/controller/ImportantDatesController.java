@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.ImportantdatesService;
 import com.dimitri.domain.ImportantDates;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -13,7 +14,6 @@ import java.util.Set;
 public class ImportantDatesController {
     @Autowired
     @Qualifier("DatesServiceImpl")
-
     private ImportantdatesService service;
 
     @PostMapping("/create")
@@ -36,7 +36,7 @@ public class ImportantDatesController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<ImportantDates> getAll(){
+    public List<ImportantDates> getAll(){
         return service.getAll();
     }
 

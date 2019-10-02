@@ -1,10 +1,9 @@
 package com.dimitri.repository;
 
-import com.dimitri.domain.Subjects;
-import com.dimitri.repository.IRepository;
+import com.dimitri.domain.CollegeSubjects;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import java.util.Set;
 
-public interface SubjectsIRepository extends IRepository<Subjects, String> {
-    Set<Subjects>getAll();
+@Repository
+public interface SubjectsIRepository extends JpaRepository<CollegeSubjects, String> {
 }

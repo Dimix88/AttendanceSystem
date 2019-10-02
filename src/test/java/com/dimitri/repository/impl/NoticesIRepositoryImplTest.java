@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.NoticesIRepository;
 import com.dimitri.domain.Notices;
@@ -78,4 +78,4 @@ public class NoticesIRepositoryImplTest {
         System.out.println("In getAll, all = " + noticeSet);
         Assert.assertSame(4, noticeSet.size());
     }
-}
+}**/

@@ -1,42 +1,52 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.SchoolIRepository;
-import com.dimitri.repository.impl.SchoolIRepositoryImpl;
+//import com.dimitri.repository.impl.SchoolIRepositoryImpl;
 import com.dimitri.domain.School;
 import com.dimitri.service.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
+
 @Service("SchoolServiceImpl")
 public class SchoolServiceImpl implements SchoolService {
+    public static SchoolService schoolService = null;
+
     @Autowired
-    @Qualifier("SchoolRepository")
-    private SchoolIRepository repository = null;
+    private SchoolIRepository repository;
+
+    private SchoolServiceImpl(){}
+
+    public static SchoolService getSchoolService(){
+        if (schoolService==null)schoolService = new SchoolServiceImpl();
+        return schoolService;
+    }
 
     @Override
     public School create(School school) {
-        return this.repository.create(school);
+        return this.repository.save(school);
     }
 
     @Override
     public School update(School school) {
-        return this.repository.update(school);
+        return this.repository.save(school);
     }
 
     @Override
     public void delete(String s) {
-        this.repository.delete(s);
+        this.repository.deleteById(s);
     }
 
     @Override
     public School read(String s) {
-        return this.repository.read(s);
+        Optional<School>optionalSchool = this.repository.findById(s);
+        return optionalSchool.orElse(null);
     }
 
     @Override
-    public Set<School> getAll() {
-        return this.repository.getAll();
+    public List<School> getAll() {
+        return this.repository.findAll();
     }
 }

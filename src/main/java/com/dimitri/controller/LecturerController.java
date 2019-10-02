@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 import com.dimitri.domain.Lecturer;
 import com.dimitri.service.LecturerService;
+
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -34,7 +36,7 @@ public class LecturerController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Lecturer> getAll(){
+    public List<Lecturer> getAll(){
         return service.getAll();
     }
 

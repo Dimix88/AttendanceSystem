@@ -1,7 +1,7 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.SubjectsIRepository;
-import com.dimitri.domain.Subjects;
+import com.dimitri.domain.CollegeSubjects;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import java.util.stream.Collectors;
@@ -14,14 +14,14 @@ import java.util.Set;
 public class SubjectsIRepositoryImpl implements SubjectsIRepository {
     @Autowired
     private static SubjectsIRepositoryImpl repository = null;
-    private Set<Subjects> subjects;
+    private Set<CollegeSubjects> subjects;
 
     private SubjectsIRepositoryImpl(){
         this.subjects = new HashSet<>();
     }
 
-    private Subjects findSubjects(String subjectCode){
-        for (Subjects classes2: this.subjects){
+    private CollegeSubjects findSubjects(String subjectCode){
+        for (CollegeSubjects classes2: this.subjects){
             if (classes2.getSubjectCode().equals(subjectCode))
                 return classes2;
         }
@@ -31,14 +31,14 @@ public class SubjectsIRepositoryImpl implements SubjectsIRepository {
         return repository;
     }
     @Override
-    public Subjects create(Subjects subjects) {
+    public CollegeSubjects create(CollegeSubjects subjects) {
         this.subjects.add(subjects);
         return subjects;
     }
 
     @Override
-    public Subjects update(Subjects subjects) {
-        Subjects toDelete = findSubjects(subjects.getSubjectCode());
+    public CollegeSubjects update(CollegeSubjects subjects) {
+        CollegeSubjects toDelete = findSubjects(subjects.getSubjectCode());
         if(toDelete != null) {
             this.subjects.remove(toDelete);
             return create(subjects);
@@ -48,16 +48,17 @@ public class SubjectsIRepositoryImpl implements SubjectsIRepository {
 
     @Override
     public void delete(String subjectCode) {
-        Subjects class1 = findSubjects(subjectCode);
+        CollegeSubjects class1 = findSubjects(subjectCode);
         if(class1 != null){
             this.subjects.remove(class1);
         }    }
 
     @Override
-    public Subjects read(String subjectCode) {
+    public CollegeSubjects read(String subjectCode) {
         return findSubjects(subjectCode);
     }
-    public Set<Subjects> getAll(){
+    public Set<CollegeSubjects> getAll(){
         return this.subjects;
     }
 }
+**/

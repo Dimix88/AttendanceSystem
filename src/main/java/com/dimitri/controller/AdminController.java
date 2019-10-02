@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.AdminService;
 import com.dimitri.domain.Admin;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -35,7 +36,7 @@ public class AdminController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Admin> getAll(){
+    public List<Admin> getAll(){
         return service.getAll();
     }
 

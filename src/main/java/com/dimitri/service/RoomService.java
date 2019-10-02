@@ -2,8 +2,8 @@ package com.dimitri.service;
 
 import com.dimitri.domain.Room;
 
-import java.util.Set;
+import java.util.List;
 
 public interface RoomService extends IService<Room, String> {
-    Set<Room>getAll();
+    List<Room> getAll();
 }

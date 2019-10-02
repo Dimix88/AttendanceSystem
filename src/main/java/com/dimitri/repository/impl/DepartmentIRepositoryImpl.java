@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.DepartmentIRepository;
 import com.dimitri.domain.Department;
@@ -62,3 +62,4 @@ public class DepartmentIRepositoryImpl implements DepartmentIRepository {
         return this.departments;
     }
 }
+**/

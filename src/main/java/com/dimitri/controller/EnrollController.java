@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.EnrollService;
 import com.dimitri.domain.Enroll;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -35,7 +36,7 @@ public class EnrollController {
 
     @PostMapping("/read/all")
     @ResponseBody
-    public Set<Enroll> getAll(){
+    public List<Enroll> getAll(){
         return service.getAll();
     }
 

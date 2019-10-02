@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 import com.dimitri.service.AddressService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -35,7 +36,7 @@ public class AddressController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Address> getAll(){
+    public List<Address> getAll(){
         return service.getAll();
     }
 

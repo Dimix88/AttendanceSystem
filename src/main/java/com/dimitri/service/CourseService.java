@@ -2,8 +2,8 @@ package com.dimitri.service;
 
 import com.dimitri.domain.Course;
 
-import java.util.Set;
+import java.util.List;
 
 public interface CourseService extends IService<Course, String> {
-    Set<Course>getAll();
+    List<Course> getAll();
 }

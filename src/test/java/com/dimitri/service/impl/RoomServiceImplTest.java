@@ -1,14 +1,16 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.RoomIRepository;
-import com.dimitri.repository.impl.RoomIRepositoryImpl;
+//import com.dimitri.repository.impl.RoomIRepositoryImpl;
 import com.dimitri.domain.Room;
 import com.dimitri.factory.RoomFactory;
+import com.dimitri.service.RoomService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,62 +20,59 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class RoomServiceImplTest {
-    @Autowired
+    private RoomService roomService;
     private RoomIRepository repository;
     private Room c1;
-    Set<Room> rooms = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-
+        this.roomService = RoomServiceImpl.getRoomService();
         c1 = RoomFactory.getRoom("Large");
-
+        this.roomService.create(c1);
     }
 
     @Test
     public void create() {
-        Room room= this.repository.create(this.c1);
-        String name = "Large";
-        System.out.println("In create, created = " + room);
-        Assert.assertEquals(name,room.getRoomType());
-        Assert.assertNotNull(rooms);
-        Assert.assertSame(room, this.c1);
+        Room room= RoomFactory.getRoom("Small");
+        this.roomService.create(room);
+        String name = "Small";
+        Assert.assertEquals(room.getRoomCode(),roomService.read(room.getRoomCode()).getRoomType());
+        Assert.assertNotNull(room);
+        Assert.assertEquals(name, roomService.read(room.getRoomCode()).getRoomType());
+        Assert.assertSame(room, roomService.read(room.getRoomCode()));
     }
 
     @Test
     public void update() {
-        Room room= this.repository.create(this.c1);
-        String newRoomCode = "133";
-        Room newRoom = new Room.Builder().copy(room).roomCode(newRoomCode).build();
-        this.repository.create(newRoom);
-        System.out.println("In update, Will update = " + newRoom);
-        Room updated = this.repository.update(newRoom);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertSame(newRoom.getRoomCode(), updated.getRoomCode());
+        String newRoomType = "Tiny";
+        Room newRoom = new Room.Builder().copy(c1).roomCode(newRoomType).build();
+        this.roomService.update(newRoom);
+        Assert.assertEquals(newRoom,roomService.read(c1.getRoomCode()));
     }
 
     @Test
     public void delete() {
-        Room room= this.repository.create(this.c1);
-        this.repository.delete(room.getRoomCode());
-        System.out.println(this.rooms);
+        Room deleteRoom= RoomFactory.getRoom("Big");
+        roomService.create(deleteRoom);
+        roomService.delete(deleteRoom.getRoomCode());
+        Room result = roomService.read(deleteRoom.getRoomCode());
+        Assert.assertFalse(roomService.getAll().iterator().next().getRoomType().contains("Big"));
+        Assert.assertNull(result);
     }
 
     @Test
     public void read() {
-        Room room= this.repository.create(this.c1);
-        System.out.println("In read, courseId = "+ room.getRoomCode());
-        Room read = this.repository.read(room.getRoomCode());
-        System.out.println("In read, read = "+ read);
-        Assert.assertEquals(c1.getRoomCode(), this.repository.read(c1.getRoomCode()).getRoomCode());
+        Room read = this.roomService.create(this.c1);
+        Assert.assertEquals(read, roomService.read(read.getRoomCode()));
+        Assert.assertEquals(read, roomService.read(c1.getRoomCode()));
 
     }
 
 
     @Test
     public void getAll() {
-        Set<Room> roomsSet = this.repository.getAll();
+        List<Room> roomsSet = this.roomService.getAll();
         System.out.println("In getAll, all = " + roomsSet);
-        Assert.assertSame(1, roomsSet.size());
+        Assert.assertSame(roomsSet.size(),roomService.getAll().size());
     }
 }

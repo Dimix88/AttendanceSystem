@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.LecturerIRepository;
 import com.dimitri.domain.Lecturer;
@@ -78,4 +78,4 @@ public class LecturerIRepositoryImplTest {
         System.out.println("In getAll, all = " + lecturersSet);
         Assert.assertSame(4, lecturersSet.size());
     }
-}
+}**/

@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.AddressIRepository;
 import com.dimitri.domain.Address;
@@ -62,7 +62,7 @@ public class AddressIRepositoryImplTest {
     @Test
     public void delete() {
         Address address= this.repository.create(this.c1);
-        this.repository.delete(address.getStreetAddres());
+        this.repository.delete(address.getAddressCode());
         System.out.println(this.addresses);
     }
 
@@ -83,4 +83,4 @@ public class AddressIRepositoryImplTest {
         System.out.println("In getAll, all = " + addressesSet);
         Assert.assertSame(4, addressesSet.size());
     }
-}
+}**/

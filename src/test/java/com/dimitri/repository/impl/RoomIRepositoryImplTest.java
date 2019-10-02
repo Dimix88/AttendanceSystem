@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.RoomIRepository;
 import com.dimitri.domain.Room;
@@ -78,4 +78,4 @@ public class RoomIRepositoryImplTest {
         System.out.println("In getAll, all = " + roomsSet);
         Assert.assertSame(4, roomsSet.size());
     }
-}
+}**/

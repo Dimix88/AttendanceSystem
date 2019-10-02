@@ -2,9 +2,9 @@ package com.dimitri.repository;
 
 import com.dimitri.domain.Room;
 import com.dimitri.repository.IRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Set;
-
-public interface RoomIRepository extends IRepository<Room, String> {
-    Set<Room>getAll();
+@Repository
+public interface RoomIRepository extends JpaRepository<Room, String> {
 }

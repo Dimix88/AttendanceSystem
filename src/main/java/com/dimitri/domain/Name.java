@@ -1,17 +1,28 @@
 package com.dimitri.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Name {
-    String firstName;
-    String middleName;
-    String lastName;
+    @Id
+    private String nameCode;
+    private String firstName;
+    private String middleName;
+    private String lastName;
 
     public Name(){}
 
     public Name(Builder builder){
+        this.nameCode = builder.nameCode;
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.middleName = builder.middleName;
 
+    }
+
+    public String getNameCode() {
+        return nameCode;
     }
 
     public String getFirstname() {
@@ -27,10 +38,15 @@ public class Name {
     }
 
     public static class Builder{
+        String nameCode;
         String firstName;
         String middleName;
         String lastName;
 
+        public Builder nameCode(String nameCode){
+            this.nameCode = nameCode;
+            return this;
+        }
         public Builder firstName(String firstName){
             this.firstName = firstName;
             return this;
@@ -44,6 +60,7 @@ public class Name {
             return this;
         }
         public Builder copy(Name name){
+            this.nameCode = name.nameCode;
             this.firstName = name.firstName;
             this.middleName = name.middleName;
             this.lastName = name.lastName;

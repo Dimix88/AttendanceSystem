@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.CleanerIRepository;
 import com.dimitri.domain.Cleaner;
@@ -78,4 +78,4 @@ public class CleanerIRepositoryImplTest {
         System.out.println("In getAll, all = " + cleanerSet);
         Assert.assertSame(4, cleanerSet.size());
     }
-}
+}**/

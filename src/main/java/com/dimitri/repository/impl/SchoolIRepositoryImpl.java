@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.SchoolIRepository;
 import com.dimitri.domain.School;
@@ -61,3 +61,4 @@ public class SchoolIRepositoryImpl implements SchoolIRepository {
         return this.schools;
     }
 }
+**/

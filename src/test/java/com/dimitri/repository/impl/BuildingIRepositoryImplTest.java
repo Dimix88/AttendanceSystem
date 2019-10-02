@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.BuildingIRepository;
 import com.dimitri.domain.Building;
@@ -78,4 +78,4 @@ public class BuildingIRepositoryImplTest {
         this.repository.delete(building.getBldgCode());
         System.out.println(this.buildings);
     }
-}
+}**/

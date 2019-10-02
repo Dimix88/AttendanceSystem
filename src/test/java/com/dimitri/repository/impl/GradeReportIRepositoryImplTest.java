@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.GradeReportIRepository;
 import com.dimitri.domain.GradeReport;
@@ -78,4 +78,4 @@ public class GradeReportIRepositoryImplTest {
         System.out.println("In getAll, all = " + studentsSet);
         Assert.assertSame(4, studentsSet.size());
     }
-}
+}**/

@@ -1,14 +1,16 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.DepartmentIRepository;
-import com.dimitri.repository.impl.DepartmentIRepositoryImpl;
+//import com.dimitri.repository.impl.DepartmentIRepositoryImpl;
 import com.dimitri.domain.Department;
 import com.dimitri.factory.DepartmentFactory;
+import com.dimitri.service.DepartmentService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,60 +20,58 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class DepartmentServiceImplTest {
-    @Autowired
+    private DepartmentService departmentService;
     private DepartmentIRepository repository;
     private Department c1;
-    Set<Department> departments = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-
+        this.departmentService = DepartmentServiceImpl.getDepartmentService();
         c1 = DepartmentFactory.getDepartment("Marketing","UWC");
-
+        departmentService.create(c1);
     }
 
     @Test
     public void create() {
-        Department department= this.repository.create(this.c1);
+        Department department= DepartmentFactory.getDepartment("Marketing","");
+        departmentService.create(department);
         String name = "Marketing";
-        System.out.println("In create, created = " + department);
-        Assert.assertEquals(name,department.getDeptName());
+        Assert.assertEquals(department.getDeptName(),departmentService.read(department.getDeptCode()).getDeptName());
         Assert.assertNotNull(department);
-        Assert.assertSame(department, this.c1);
+        Assert.assertEquals(name, departmentService.read(department.getDeptCode()).getDeptName());
+        Assert.assertSame(department, departmentService.read(department.getDeptCode()));
     }
 
     @Test
-    public void update() {
-        Department department= this.repository.create(this.c1);
-        String newDeptId = "133";
-        Department newDept = new Department.Builder().copy(department).deptName(newDeptId).build();
-        System.out.println("In update, Will update = " + newDept);
-        Department updated = this.repository.update(newDept);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertSame(newDept.getDeptName(), updated.getDeptName());
+    public void update() { ;
+        String newDeptName = "Sales";
+        Department newDept = new Department.Builder().copy(c1).deptName(newDeptName).build();
+        departmentService.update(newDept);
+        Assert.assertEquals(newDept,departmentService.read(c1.getDeptCode()));
     }
 
     @Test
     public void delete() {
-        Department department= this.repository.create(this.c1);
-        this.repository.delete(department.getDeptCode());
-        System.out.println(departments);
+        Department deleteDepartment= DepartmentFactory.getDepartment("IT","");
+        departmentService.create(deleteDepartment);
+        departmentService.delete(deleteDepartment.getDeptCode());
+        Department result = departmentService.read(deleteDepartment.getDeptCode());
+        Assert.assertFalse(departmentService.getAll().iterator().next().getDeptName().contains("IT"));
+        Assert.assertNull(result);
     }
 
     @Test
     public void read() {
-        Department department= this.repository.create(this.c1);
-        System.out.println("In read, courseId = "+ department.getDeptCode());
-        Department read = this.repository.read(department.getDeptCode());
-        System.out.println("In read, read = "+ read);
-        Assert.assertEquals(c1.getDeptCode(), this.repository.read(c1.getDeptCode()).getDeptCode());
+        Department read= this.departmentService.create(this.c1);
+        Assert.assertEquals(read, departmentService.read(read.getDeptCode()));
+        Assert.assertEquals(read, departmentService.read(c1.getDeptCode()));
     }
 
 
     @Test
     public void getAll() {
-        Set<Department> departments2 = this.repository.getAll();
+        List<Department> departments2 = this.departmentService.getAll();
         System.out.println("In getAll, all = " + departments2);
-        Assert.assertSame(1, departments2.size());
+        Assert.assertSame(departments2.size(),departmentService.getAll().size());
     }
 }

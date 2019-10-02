@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.domain.Notices;
 import com.dimitri.service.NoticesService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -36,7 +37,7 @@ public class NoticesController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Notices> getAll(){
+    public List<Notices> getAll(){
         return service.getAll();
     }
 

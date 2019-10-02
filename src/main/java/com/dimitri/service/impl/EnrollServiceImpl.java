@@ -1,42 +1,51 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.EnrollIRepository;
-import com.dimitri.repository.impl.EnrollIRepositoryImpl;
+//import com.dimitri.repository.impl.EnrollIRepositoryImpl;
 import com.dimitri.domain.Enroll;
 import com.dimitri.service.EnrollService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
+
 @Service("EnrollServiceImpl")
 public class EnrollServiceImpl implements EnrollService {
-    @Autowired
-    @Qualifier("EnrollRepository")
-    private EnrollIRepository repository = null;
+    public static EnrollService enrollService=null;
 
+    @Autowired
+    private EnrollIRepository repository;
+
+    private EnrollServiceImpl(){}
+
+    public static EnrollService getEnrollService(){
+        if (enrollService==null)enrollService= new EnrollServiceImpl();
+        return enrollService;
+    }
     @Override
-    public Set<Enroll> getAll() {
-        return this.repository.getAll();
+    public List<Enroll> getAll() {
+        return this.repository.findAll();
     }
 
     @Override
     public Enroll create(Enroll enroll) {
-        return this.repository.create(enroll);
+        return this.repository.save(enroll);
     }
 
     @Override
     public Enroll update(Enroll enroll) {
-        return this.repository.update(enroll);
+        return this.repository.save(enroll);
     }
 
     @Override
     public void delete(String s) {
-        this.repository.delete(s);
+        this.repository.deleteById(s);
     }
 
     @Override
     public Enroll read(String s) {
-        return this.repository.read(s);
+        Optional<Enroll>optionalEnroll = this.repository.findById(s);
+        return optionalEnroll.orElse(null);
     }
 }

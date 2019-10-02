@@ -1,42 +1,51 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.TimetableIRepository;
-import com.dimitri.repository.impl.TimetableIRepositoryImpl;
-import com.dimitri.domain.Timetable;
+//import com.dimitri.repository.impl.TimetableIRepositoryImpl;
+import com.dimitri.domain.CollegeTimetable;
 import com.dimitri.service.TimetableService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
+
 @Service("TimeServiceImpl")
 public class TimeTableServiceImpl implements TimetableService {
+    public static TimetableService timetableService = null;
+
     @Autowired
-    @Qualifier("TimetableRepository")
-    private TimetableIRepository repository = null;
+    private TimetableIRepository repository;
 
+    private TimeTableServiceImpl(){}
+
+    public static TimetableService getTimetableService(){
+        if (timetableService==null)timetableService = new TimeTableServiceImpl();
+        return timetableService;
+    }
     @Override
-    public Set<Timetable> getAll() {
-        return this.repository.getAll();
+    public List<CollegeTimetable> getAll() {
+        return this.repository.findAll();
     }
 
     @Override
-    public Timetable create(Timetable timetable) {
-        return this.repository.create(timetable);
+    public CollegeTimetable create(CollegeTimetable collegeTimetable) {
+        return this.repository.save(collegeTimetable);
     }
 
     @Override
-    public Timetable update(Timetable timetable) {
-        return this.repository.update(timetable);
+    public CollegeTimetable update(CollegeTimetable collegeTimetable) {
+        return this.repository.save(collegeTimetable);
     }
 
     @Override
     public void delete(String s) {
-        this.repository.delete(s);
+        this.repository.deleteById(s);
     }
 
     @Override
-    public Timetable read(String s) {
-        return this.repository.read(s);
+    public CollegeTimetable read(String s) {
+        Optional<CollegeTimetable>optionalTimetable = this.repository.findById(s);
+        return optionalTimetable.orElse(null);
     }
 }

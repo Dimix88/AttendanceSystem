@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.ImportantdatesIRepository;
 import com.dimitri.domain.ImportantDates;
@@ -20,9 +20,9 @@ public class ImportantDatesIRepositoryImpl implements ImportantdatesIRepository 
         this.importantDates = new HashSet<>();
     }
 
-    private ImportantDates findImportantDates(String sDate){
+    private ImportantDates findImportantDates(String importantDatesCode){
         for (ImportantDates classes2: this.importantDates){
-            if (classes2.getsDate().equals(sDate))
+            if (classes2.getsDate().equals(importantDatesCode))
                 return classes2;
         }
         return null;    }
@@ -38,7 +38,7 @@ public class ImportantDatesIRepositoryImpl implements ImportantdatesIRepository 
 
     @Override
     public ImportantDates update(ImportantDates importantDates) {
-        ImportantDates toDelete = findImportantDates(importantDates.getsDate());
+        ImportantDates toDelete = findImportantDates(importantDates.getImportantDatesCode());
         if(toDelete != null) {
             this.importantDates.remove(toDelete);
             return create(importantDates);
@@ -47,8 +47,8 @@ public class ImportantDatesIRepositoryImpl implements ImportantdatesIRepository 
     }
 
     @Override
-    public void delete(String importantDates) {
-        ImportantDates class1 = findImportantDates(importantDates);
+    public void delete(String importantDatesCode) {
+        ImportantDates class1 = findImportantDates(importantDatesCode);
         if(class1 != null){
             this.importantDates.remove(class1);
         }    }
@@ -61,3 +61,4 @@ public class ImportantDatesIRepositoryImpl implements ImportantdatesIRepository 
         return this.importantDates;
     }
 }
+**/

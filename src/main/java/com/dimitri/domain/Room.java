@@ -1,11 +1,14 @@
 package com.dimitri.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
-
+@Entity
 public class Room implements Comparable<Room>{
-    String roomCode;
-    String roomType;
-    String bldgCode;
+    @Id
+    private String roomCode;
+    private String roomType;
+    private String bldgCode;
 
     public Room(){}
 

@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.LecturerIRepository;
 import com.dimitri.domain.Lecturer;
@@ -63,3 +63,4 @@ public class LecturerIRepositoryImpl implements LecturerIRepository {
         return this.lecturers;
     }
 }
+**/

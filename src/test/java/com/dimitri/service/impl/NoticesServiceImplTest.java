@@ -1,14 +1,16 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.NoticesIRepository;
-import com.dimitri.repository.impl.NoticesIRepositoryImpl;
+//import com.dimitri.repository.impl.NoticesIRepositoryImpl;
 import com.dimitri.domain.Notices;
 import com.dimitri.factory.NoticesFactory;
+import com.dimitri.service.NoticesService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,62 +20,58 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class NoticesServiceImplTest {
-    @Autowired
+    private NoticesService noticesService;
     private NoticesIRepository repository;
     private Notices c1;
-    Set<Notices> notices = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-
+        this.noticesService = NoticesServiceImpl.getNoticesService();
         c1 = NoticesFactory.getNotices("eat");
-
+        noticesService.create(c1);
     }
 
     @Test
     public void create() {
-        Notices notices= this.repository.create(this.c1);
-        String name = "eat";
-        System.out.println("In create, created = " + notices);
-        Assert.assertEquals(name,notices.getNotice());
+        Notices notices= NoticesFactory.getNotices("sleep");
+        String name = "sleep";
+        Assert.assertEquals(notices.getNotice(),noticesService.read(notices.getNoticeID()).getNotice());
         Assert.assertNotNull(notices);
-        Assert.assertSame(notices, this.c1);
+        Assert.assertEquals(name, noticesService.read(notices.getNoticeID()).getNotice());
+        Assert.assertSame(notices, noticesService.read(notices.getNoticeID()));
     }
 
     @Test
     public void update() {
-        Notices notices= this.repository.create(this.c1);
-        String newNoticeID = "133";
-        Notices newNotice = new Notices.Builder().copy(notices).noticeID(newNoticeID).build();
-        this.repository.create(newNotice);
-        System.out.println("In update, Will update = " + newNotice);
-        Notices updated = this.repository.update(newNotice);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertSame(newNotice.getNoticeID(), updated.getNoticeID());
+        String newNoticeNote = "133";
+        Notices newNotice = new Notices.Builder().copy(c1).notice(newNoticeNote).build();
+        this.noticesService.update(newNotice);
+        Assert.assertEquals(newNotice,noticesService.read(c1.getNoticeID()));
     }
 
     @Test
     public void delete() {
-        Notices notices= this.repository.create(this.c1);
-        this.repository.delete(notices.getNoticeID());
-        System.out.println(this.notices);
+        Notices deleteNotices= NoticesFactory.getNotices("walk");
+        noticesService.create(deleteNotices);
+        noticesService.delete(deleteNotices.getNoticeID());
+        Notices result = noticesService.read(deleteNotices.getNoticeID());
+        Assert.assertFalse(noticesService.getAll().iterator().next().getNotice().contains("walk"));
+        Assert.assertNull(result);
     }
 
     @Test
     public void read() {
-        Notices notices= this.repository.create(this.c1);
-        System.out.println("In read, courseId = "+ notices.getNoticeID());
-        Notices read = this.repository.read(notices.getNoticeID());
-        System.out.println("In read, read = "+ read);
-        Assert.assertEquals(c1.getNoticeID(), this.repository.read(c1.getNoticeID()).getNoticeID());
+        Notices read= this.noticesService.create(this.c1);
+        Assert.assertEquals(read, noticesService.read(read.getNoticeID()));
+        Assert.assertEquals(read, noticesService.read(c1.getNoticeID()));
 
     }
 
 
     @Test
     public void getAll() {
-        Set<Notices> noticeSet = this.repository.getAll();
+        List<Notices> noticeSet = this.noticesService.getAll();
         System.out.println("In getAll, all = " + noticeSet);
-        Assert.assertSame(1, noticeSet.size());
+        Assert.assertSame(noticeSet.size(),noticesService.getAll().size());
     }
 }

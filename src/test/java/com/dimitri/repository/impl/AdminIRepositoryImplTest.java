@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.AdminIRepository;
 import com.dimitri.domain.Admin;
@@ -78,4 +78,4 @@ public class AdminIRepositoryImplTest {
         System.out.println("In getAll, all = " + adminSet);
         Assert.assertSame(4, adminSet.size());
     }
-}
+}**/

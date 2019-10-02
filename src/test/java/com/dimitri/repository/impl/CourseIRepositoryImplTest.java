@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.CourseIRepository;
 import com.dimitri.domain.Course;
@@ -77,4 +77,4 @@ public class CourseIRepositoryImplTest {
         System.out.println("In getAll, all = " + coursesSet);
         Assert.assertSame(4, coursesSet.size());
     }
-}
+}**/

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dimitri.domain.Semester;
 import com.dimitri.service.SemesterService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -13,7 +14,6 @@ import java.util.Set;
 public class SemesterController {
     @Autowired
     @Qualifier("SemesterServiceImpl")
-
     private SemesterService service;
 
     @PostMapping("/create")
@@ -36,7 +36,7 @@ public class SemesterController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Semester> getAll(){
+    public List<Semester> getAll(){
         return service.getAll();
     }
 

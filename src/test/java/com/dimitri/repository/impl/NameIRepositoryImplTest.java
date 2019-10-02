@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.NameIRepository;
 import com.dimitri.domain.Name;
@@ -57,7 +57,7 @@ public class NameIRepositoryImplTest {
     @Test
     public void delete() {
         Name name= this.repository.create(this.c1);
-        this.repository.delete(name.getFirstname());
+        this.repository.delete(name.getNameCode());
         System.out.println(this.names);
     }
 
@@ -78,4 +78,4 @@ public class NameIRepositoryImplTest {
         System.out.println("In getAll, all = " + nameSet);
         Assert.assertSame(4, nameSet.size());
     }
-}
+}**/

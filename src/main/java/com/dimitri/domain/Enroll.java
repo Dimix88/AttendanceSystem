@@ -1,8 +1,13 @@
 package com.dimitri.domain;
 
-import java.util.Objects;
+import org.springframework.data.repository.cdi.Eager;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.util.Objects;
+@Entity
 public class Enroll implements Comparable<Enroll> {
+    @Id
     private String courseCode;
     private String studentId;
     private String enrollDate;

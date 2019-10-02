@@ -1,4 +1,4 @@
-package com.dimitri.repository.impl;
+/**package com.dimitri.repository.impl;
 
 import com.dimitri.repository.AdminIRepository;
 import com.dimitri.domain.Admin;
@@ -61,3 +61,4 @@ public class AdminIRepositoryImpl implements AdminIRepository {
         return this.admins;
     }
 }
+**/

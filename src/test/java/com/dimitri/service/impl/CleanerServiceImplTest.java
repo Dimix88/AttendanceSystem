@@ -1,14 +1,16 @@
 package com.dimitri.service.impl;
 
 import com.dimitri.repository.CleanerIRepository;
-import com.dimitri.repository.impl.CleanerIRepositoryImpl;
+//import com.dimitri.repository.impl.CleanerIRepositoryImpl;
 import com.dimitri.domain.Cleaner;
 import com.dimitri.factory.CleanerFactory;
+import com.dimitri.service.CleanerService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,62 +20,59 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class CleanerServiceImplTest {
-    @Autowired
+    private CleanerService cleanerService;
     private CleanerIRepository repository;
     private Cleaner c1;
     Set<Cleaner> cleaners = new HashSet<>();
 
     @Before
     public void setUp() throws Exception {
-        this.repository = CleanerIRepositoryImpl.getRepository();
+        this.cleanerService = CleanerServiceImpl.getCleanerService();
         c1 = CleanerFactory.getCleaner("Dimitri","Ferus","1000000","mm@gmail.com");
-
+        cleanerService.create(c1);
     }
 
     @Test
     public void create() {
-        Cleaner cleaner= this.repository.create(this.c1);
-        String name = "Dimitri";
-        System.out.println("In create, created = " + cleaner);
-        Assert.assertEquals(name,cleaner.getCleanerName());
+        Cleaner cleaner= CleanerFactory.getCleaner("Mike","Ferus","1000000","mm@gmail.com");
+        cleanerService.create(cleaner);
+        String name = "Mike";
+        Assert.assertEquals(cleaner.getCleanerName(),cleanerService.read(cleaner.getCleanerId()).getCleanerName());
         Assert.assertNotNull(cleaner);
-        Assert.assertSame(cleaner, this.c1);
+        Assert.assertEquals(name, cleanerService.read(cleaner.getCleanerId()).getCleanerName());
+        Assert.assertSame(cleaner, cleanerService.read(cleaner.getCleanerId()));
     }
 
     @Test
     public void update() {
-        Cleaner cleaner= this.repository.create(this.c1);
-        String newCleanerId = "133";
-        Cleaner newCleaner = new Cleaner.Builder().copy(cleaner).cleanerId(newCleanerId).build();
-        this.repository.create(newCleaner);
-        System.out.println("In update, Will update = " + newCleanerId);
-        Cleaner updated = this.repository.update(newCleaner);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertSame(newCleaner.getCleanerId(), updated.getCleanerId());
+        String newCleanerName = "John";
+        Cleaner newCleaner = new Cleaner.Builder().copy(c1).cleanerName(newCleanerName).build();
+        this.cleanerService.update(newCleaner);
+        Assert.assertEquals(newCleaner,cleanerService.read(c1.getCleanerId()));
     }
 
     @Test
     public void delete() {
-        Cleaner cleaner= this.repository.create(this.c1);
-        this.repository.delete(cleaner.getCleanerId());
-        System.out.println(this.cleaners);
+        Cleaner deleteCleaner= CleanerFactory.getCleaner("Jeff","Probst","","");
+        cleanerService.create(deleteCleaner);
+        cleanerService.delete(deleteCleaner.getCleanerId());
+        Cleaner result = cleanerService.read(deleteCleaner.getCleanerId());
+        Assert.assertFalse(cleanerService.getAll().iterator().next().getCleanerName().contains("Jeff"));
+        Assert.assertNull(result);
     }
 
     @Test
     public void read() {
-        Cleaner cleaner= this.repository.create(this.c1);
-        System.out.println("In read, courseId = "+ cleaner.getCleanerId());
-        Cleaner read = this.repository.read(cleaner.getCleanerId());
-        System.out.println("In read, read = "+ read);
-        Assert.assertEquals(c1.getCleanerId(), this.repository.read(c1.getCleanerId()).getCleanerId());
-
+        Cleaner read= this.cleanerService.create(this.c1);
+        Assert.assertEquals(read, cleanerService.read(read.getCleanerId()));
+        Assert.assertEquals(read, cleanerService.read(c1.getCleanerId()));
     }
 
 
     @Test
     public void getAll() {
-        Set<Cleaner> cleanerSet = this.repository.getAll();
+        List<Cleaner> cleanerSet = this.cleanerService.getAll();
         System.out.println("In getAll, all = " + cleanerSet);
-        Assert.assertSame(1, cleanerSet.size());
+        Assert.assertSame(cleanerSet.size(),cleanerService.getAll().size());
     }
 }
